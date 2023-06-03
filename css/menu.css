@@ -5,10 +5,10 @@
   @apply flex items-center;
 }
 .search-form input {
-  @apply h-12 w-[120px];
+  @apply h-12 w-[80px];
 }
 .search-form #search {
-  @apply p-6;
+  @apply pl-6 pr-0;
   background: url("/icons/icon-search.svg") no-repeat 0 50%;
 }
 /* social-menu */

@@ -35,10 +35,11 @@ h3,
 h4,
 h5,
 h6 {
-  @apply text-lg leading-none tracking-normal sm:text-xl lg:text-2xl;
+  @apply text-lg leading-none sm:text-xl lg:text-2xl;
 }
-h1 {
-  @apply mb-3 text-3xl tracking-tighter sm:text-4xl xl:text-5xl;
+h1,
+.title-1 {
+  @apply mb-3 text-3xl sm:text-4xl xl:text-5xl leading-[57px];
 }
 
 h2,
@@ -74,4 +75,8 @@ h5 {
 }
 h6 {
   @apply text-lg font-semibold;
+}
+.title-type-1 mark {
+  color: inherit;
+  @apply border-b-2 border-b-yellow;
 }

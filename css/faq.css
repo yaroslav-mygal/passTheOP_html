@@ -1,0 +1,72 @@
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.panel-group .panel-heading {
+  border-bottom: 0;
+}
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+.panel-heading.panel-headingtopbar {
+  margin-bottom: 6px;
+}
+.accordion-panel-group-sec .panel-default > .panel-heading {
+  color: #fff;
+  background-color: #192c71;
+  padding: 15px;
+}
+.accordion-panel-group-sec h4.panel-title a {
+  font-size: 17px;
+  font-weight: 500;
+  width: 100%;
+  display: inline-block;
+  color: #fff;
+  outline: none;
+}
+.accordion-panel-group-sec h4.panel-title a {
+  padding-right: 50px;
+}
+.panel-title > a:after {
+  content: "\f078";
+  font-family: "FontAwesome";
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.panel-title > a[aria-expanded="true"]:after {
+  content: "\f077";
+}
+/* my new code */
+.accordion-panel-group-sec .panel-default > .panel-heading {
+  background: none;
+  padding: 0;
+  position: relative;
+}
+.accordion-panel-group-sec .panel-default > .panel-heading > h4.panel-title a {
+  background: #dde8f7;
+  padding: 16px 32px;
+  padding-right: 75px;
+  font-size: 22px;
+  color: #0e3b74;
+  font-weight: 600;
+  border: 1px solid #b4bace;
+  border-radius: 8px;
+  position: relative;
+}
+.accordion-panel-group-sec .panel-default > .panel-heading > h4.panel-title a:after {
+  content: "";
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #0e3b74 url("/icons/arrow-down.svg") no-repeat 50% 50%;
+  background-size: 13px 12px;
+}

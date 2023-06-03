@@ -1,3 +1,9 @@
+.app-head {
+  @apply text-base border-b border-gray-500;
+}
 .app-head a {
   @apply text-current;
+}
+.app-head .logo {
+  @apply w-[153px];
 }
