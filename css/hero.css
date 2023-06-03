@@ -1,0 +1,22 @@
+#hero .hero-content h1 {
+  @apply text-[48px] leading-normal font-bold mb-4;
+}
+#hero .hero-content h4 {
+  @apply text-[20px] leading-[28px] font-normal;
+}
+#hero .hero-content {
+  @apply text-xl mb-4;
+}
+#hero .hero-content .hero-list {
+  @apply mb-12 text-lg;
+}
+#hero .hero-content .hero-list li {
+  @apply relative pl-8;
+}
+#hero .hero-content .hero-list li .icon {
+  @apply absolute left-0 top-2;
+}
+.hero-bg-picture {
+  background: url(/bg/bg-hero.jpg);
+  @apply bg-cover;
+}

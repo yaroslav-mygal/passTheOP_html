@@ -1,0 +1,21 @@
+.app-footer {
+  @apply border-t border-x-gray-500;
+}
+.app-footer-1 {
+  @apply text-lg;
+}
+.app-footer-1 .widget h3 {
+  @apply text-blue text-[22px] font-semibold mb-4;
+}
+.app-footer-1 .widget .menu li {
+  @apply mb-4;
+}
+.app-footer-1 .social-menu {
+  @apply mb-8;
+}
+.footer-menu {
+  @apply text-white mb-4 text-base flex gap-6;
+}
+.footer-menu a {
+  @apply text-white;
+}

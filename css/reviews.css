@@ -1,0 +1,23 @@
+/* review-box */
+.review-box {
+  @apply p-8 border-[#B4BACE] border border-solid rounded-lg flex gap-8;
+}
+.review-box .review-box__thumb {
+  @apply w-40 grow-0 shrink-0;
+}
+.review-box .review-box__content {
+  @apply grow pt-[0.4rem] flex flex-col justify-between;
+}
+.review-box h5,
+.review-box__content h6 {
+  @apply text-blue;
+}
+.review-box .review-box__stars {
+  @apply block w-[98px] mb-2;
+}
+.review-box__content h6 {
+  @apply mb-0;
+}
+.review-box .review-box__role {
+  @apply uppercase text-sm font-medium block;
+}

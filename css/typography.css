@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Articulat CF";
+  src: url("/assets/fonts/ArticulatCF-Bold.woff2") format("woff2"), url("/assets/fonts/ArticulatCF-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Articulat CF";
+  src: url("/assets/fonts/ArticulatCF-DemiBold.woff2") format("woff2"), url("/assets/fonts/ArticulatCF-DemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Articulat CF";
+  src: url("/assets/fonts/ArticulatCF-Normal.woff2") format("woff2"), url("/assets/fonts/ArticulatCF-Normal.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Articulat CF";
+  src: url("/assets/fonts/ArticulatCF-Medium.woff2") format("woff2"), url("/assets/fonts/ArticulatCF-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-lg leading-none tracking-normal sm:text-xl lg:text-2xl;
+}
+h1 {
+  @apply mb-3 text-3xl tracking-tighter sm:text-4xl xl:text-5xl;
+}
+
+h2,
+h3 {
+  @apply mb-4 text-[28px] leading-[34px] lg:text-4xl lg:leading-[44px];
+}
+
+h4 {
+  @apply mb-2 text-2xl lg:text-3xl;
+}
+
+h5 {
+  @apply mb-2 text-[20px];
+}
+
+p {
+  @apply mb-4 last:mb-0;
+}
+mark {
+  @apply bg-transparent p-0 text-primary;
+}
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+h5 {
+  @apply text-[22px] leading-[26px] font-semibold;
+}
+h6 {
+  @apply text-lg font-semibold;
+}

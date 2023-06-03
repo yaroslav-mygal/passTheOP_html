@@ -1,0 +1,7 @@
+.btn > a,
+a.btn {
+  @apply uppercase text-center inline-block rounded-lg bg-primary font-bold text-white py-4 px-7 text-base tracking-[1.25px];
+}
+a.btn.btn_wider {
+  @apply lg:px-12;
+}
