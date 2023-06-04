@@ -1,0 +1,62 @@
+/* exams section */
+.exam-steps {
+  @apply flex mb-[44px] overflow-hidden px-14;
+}
+.exam-steps li {
+  @apply flex-grow text-white font-bold uppercase text-center relative;
+}
+.exam-steps li:nth-child(1):before,
+.exam-steps li:after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  transform: rotate(45deg) translateY(-50%);
+  top: 15px;
+}
+.exam-steps li:nth-child(1):before {
+  @apply bg-white;
+  left: -70px;
+  z-index: 30;
+}
+.exam-steps li:after {
+  border: 2px solid #fff;
+  right: 5px;
+}
+.exam-steps li:nth-child(1) {
+  @apply z-[100] after:bg-[#B8BED1];
+}
+.exam-steps li:nth-child(2) {
+  @apply z-[90] after:bg-[#62697C];
+}
+.exam-steps li:nth-child(3) {
+  @apply z-[80] after:bg-yellow;
+}
+.exam-steps li:nth-child(4) {
+  @apply z-[70] after:bg-green;
+}
+.exam-steps li:nth-child(5) {
+  @apply z-[60] after:bg-blue;
+}
+.exam-steps li span {
+  @apply pl-6 h-[50px] flex items-center justify-center relative z-20;
+}
+.exam-steps li:last-child span strong {
+  @apply pt-1 px-2;
+}
+.exam-container .exam-row {
+  @apply flex;
+}
+.exam-container .arrow-down {
+  background: url("/icons/arrow-down.png") no-repeat;
+  @apply inline-block w-5 h-[23px];
+}
+.exam-row__cell {
+  @apply w-[64px] flex-grow-0 flex-shrink-0 flex items-center justify-center;
+}
+.exam-row__content {
+  @apply p-8 bg-[#DDE8F7] border-b border-[#B4BACE];
+}
+.exam-row__content h5 {
+  @apply text-blue mb-2;
+}

@@ -43,7 +43,8 @@ h1,
 }
 
 h2,
-h3 {
+h3,
+.section-head h1 {
   @apply mb-4 text-[28px] leading-[34px] lg:text-4xl lg:leading-[44px];
 }
 

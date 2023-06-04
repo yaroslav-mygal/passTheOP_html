@@ -1,6 +1,6 @@
 .btn > a,
 a.btn {
-  @apply uppercase text-center inline-block rounded-lg bg-primary font-bold text-white py-4 px-7 text-base tracking-[1.25px];
+  @apply uppercase text-center inline-block rounded-lg bg-primary font-bold text-white py-4 px-7 text-base tracking-[1.25px] whitespace-nowrap;
 }
 .btn.btn_enroll {
   @apply w-full h-[62px] py-5 font-semibold;
@@ -14,4 +14,7 @@ a.btn.btn_wider {
 }
 .hero-content .btn {
   @apply h-[62px] py-5;
+}
+.tutor-box a.btn {
+  @apply text-[15px] font-semibold px-5;
 }

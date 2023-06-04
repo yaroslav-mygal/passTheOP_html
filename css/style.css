@@ -7,6 +7,7 @@
 @import url("reviews.css");
 @import url("exams.css");
 @import url("faq.css");
+@import url("owl-slider.css");
 
 /* typography */
 .page-container,
@@ -69,7 +70,8 @@
 .section-head.section-head_inner {
   @apply mb-[56px] bg-[#DDE8F6] border border-[#B4BACE] rounded-lg p-6 pt-8 pb-7 w-full max-w-full;
 }
-.section-head.section-head_inner h2 {
+.section-head.section-head_inner h2,
+.section-head.section-head_inner h1 {
   @apply mb-[4px];
 }
 .sessions-section .section-head {
@@ -78,6 +80,9 @@
 .sessions-section .section-head h2,
 .sessions-section .section-head h1 {
   @apply mb-6;
+}
+.exam-section .section-head {
+  @apply mb-[30px];
 }
 /* about-content */
 .about-content {
@@ -148,7 +153,7 @@
   @apply mb-[6px] flex gap-4 min-h-[58px];
 }
 .structure-box .structure-box__head .course-icon {
-  @apply bg-primary text-white text-base font-bold h-6 w-6 text-center inline-block rounded-full flex-shrink-0 flex-grow-0;
+  @apply bg-primary text-white text-base font-bold h-6 w-6 text-center inline-block rounded-full flex-shrink-0 flex-grow-0 pt-[2px];
 }
 .structure-box .structure-box__head .structure-box__icon {
   @apply mt-1 pr-2;
@@ -249,6 +254,9 @@
 .tutor-box {
   @apply rounded-lg p-8 bg-white border border-[#B4BACE];
 }
+.tutor-box .link-details {
+  @apply underline text-base hover:no-underline;
+}
 .tutor-box h5 {
   @apply mb-4;
 }
@@ -305,50 +313,11 @@
   vertical-align: top;
 }
 /* slider */
-.owl-theme .owl-controls {
-  margin: 0;
+
+/*  */
+.courses-structure-grid .structure-box .structure-box__head {
+  @apply min-h-0 mb-3;
 }
-.owl-buttons {
-  position: absolute;
-  top: 50%;
-  left: -28px;
-  right: -28px;
-}
-.owl-buttons .owl-prev,
-.owl-buttons .owl-next {
-  position: absolute;
-  padding: 0;
-  margin: 0 !important;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  overflow: hidden;
-  width: 56px;
-  height: 56px;
-  background: #ffffff !important;
-  border: 1px solid #b4bace;
-  border-radius: 28px;
-}
-.owl-buttons .owl-prev:before,
-.owl-buttons .owl-next:before {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 16px;
-  left: 50%;
-  top: 50%;
-  margin-left: -11px;
-  margin-top: -8px;
-}
-.owl-buttons .owl-prev {
-  left: 0;
-}
-.owl-buttons .owl-prev:before {
-  background: url("/icons/arrow-left.svg") no-repeat;
-}
-.owl-buttons .owl-next {
-  right: 0;
-}
-.owl-buttons .owl-next:before {
-  background: url("/icons/arrow-left.svg") no-repeat;
-  transform: rotate(180deg);
+.courses-structure-grid .structure-box .structure-box__head h5 {
+  @apply mb-0;
 }
