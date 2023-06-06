@@ -103,19 +103,19 @@
               <div class="packages-group">
                 <h6>Program access only:</h6>
                 <div class="grid grid-cols-3 gap-2">
-                  <article class="package-box">
+                  <article class="package-box" data-tab="package-tab-1">
                     <strong class="package-box__head">EXPRESS | $69</strong>
                     <div class="package-box__content">
                       <p>Access: 14 days</p>
                     </div>
                   </article>
-                  <article class="package-box">
+                  <article class="package-box" data-tab="package-tab-2">
                     <strong class="package-box__head">CRASH COURSE | $99</strong>
                     <div class="package-box__content">
                       <p>Access: 30 days</p>
                     </div>
                   </article>
-                  <article class="package-box">
+                  <article class="package-box" data-tab="package-tab-3">
                     <strong class="package-box__head">FIRST TIME | $139</strong>
                     <div class="package-box__content">
                       <p>Access: 90 days</p>
@@ -126,7 +126,7 @@
               <div class="packages-group">
                 <h6>Program access + Private tutoring package:</h6>
                 <div class="grid grid-cols-3 gap-2">
-                  <article class="package-box bronze !border-[#62697C] !border-2">
+                  <article class="package-box bronze" data-tab="package-tab-4">
                     <strong class="package-box__head !bg-[#BC7A38]">BRONZE | $199</strong>
                     <div class="package-box__content">
                       <p>
@@ -135,7 +135,7 @@
                       </p>
                     </div>
                   </article>
-                  <article class="package-box silver">
+                  <article class="package-box silver" data-tab="package-tab-5">
                     <strong class="package-box__head !bg-[#828282]">SILVER | $375</strong>
                     <div class="package-box__content">
                       <p>
@@ -147,7 +147,7 @@
                       <span class="label bg-[#1693C7] text-white inline-block pt-[2px] px-4 rounded">Most Popular</span>
                     </span>
                   </article>
-                  <article class="package-box gold">
+                  <article class="package-box gold" data-tab="package-tab-6">
                     <strong class="package-box__head !bg-[#D99D03]">GOLD | $565</strong>
                     <div class="package-box__content">
                       <p>
@@ -158,11 +158,52 @@
                   </article>
                 </div>
               </div>
-              <h5 class="mb-6 program-subtitle">$199 <span>|</span> Bronze 60-day Access + Private tutoring</h5>
-              <ul class="program-details mb-5">
-                <li class="recommended-item"><strong>Recommended for:</strong> First time takers</li>
-                <li class="group-item"><strong>Group tutoring:</strong> 8 group tutoring sessions</li>
-              </ul>
+              <div class="package-tabs">
+                <div id="package-tab-1" class="package-tab active">
+                  <h5 class="mb-6 program-subtitle">$69 <span>|</span> EXPRESS 14-day Access</h5>
+                  <ul class="program-details mb-5">
+                    <li class="recommended-item"><strong>Recommended for:</strong> If you are taking exams in 14 days or less</li>
+                    <li class="group-item"><strong>Group tutoring:</strong> 2 group tutoring sessions</li>
+                  </ul>
+                </div>
+                <div id="package-tab-2" class="package-tab">
+                  <h5 class="mb-6 program-subtitle">$99 <span>|</span> CRASH COURSE 30-day Access</h5>
+                  <ul class="program-details mb-5">
+                    <li class="recommended-item"><strong>Recommended for:</strong> If you are taking exams in 14 days or less</li>
+                    <li class="group-item"><strong>Group tutoring:</strong> 2 group tutoring sessions</li>
+                  </ul>
+                </div>
+                <div id="package-tab-3" class="package-tab">
+                  <h5 class="mb-6 program-subtitle">$139 <span>|</span> FIRST TIME 90-day Access</h5>
+                  <ul class="program-details mb-5">
+                    <li class="recommended-item"><strong>Recommended for:</strong> First time test takers</li>
+                    <li class="group-item"><strong>Group tutoring:</strong> 12 group tutoring sessions</li>
+                  </ul>
+                </div>
+                <div id="package-tab-4" class="package-tab">
+                  <h5 class="mb-6 program-subtitle">$199 <span>|</span> Bronze 60-day Access + Private tutoring</h5>
+                  <ul class="program-details mb-5">
+                    <li class="recommended-item"><strong>Recommended for:</strong> First time test takers who need extra support</li>
+                    <li class="group-item"><strong>Group tutoring:</strong> 8 group tutoring sessions</li>
+                  </ul>
+                </div>
+                <div id="package-tab-5" class="package-tab">
+                  SILVER I $375
+                  <h5 class="mb-6 program-subtitle">$375 <span>|</span> SILVER 120-day Access + 4 Private tutoring</h5>
+                  <ul class="program-details mb-5">
+                    <li class="recommended-item"><strong>Recommended for:</strong> First time test takers who want to crush the exam</li>
+                    <li class="group-item"><strong>Group tutoring:</strong> 16 group tutoring sessions</li>
+                  </ul>
+                </div>
+                <div id="package-tab-6" class="package-tab">
+                  <h5 class="mb-6 program-subtitle">$565 <span>|</span> GOLD 180-day Access + 7 Private tutoring</h5>
+                  <ul class="program-details mb-5">
+                    <li class="recommended-item"><strong>Recommended for:</strong> Users who failed more than twice. Or graduated more than a year ago</li>
+                    <li class="group-item"><strong>Group tutoring:</strong> 24 group tutoring sessions</li>
+                  </ul>
+                </div>
+              </div>
+
               <p>Be fully prepared when you study using real up-to-date material and test questions. Includes 2,200 timed/untimed questions, 50 hours of audios/videos, 114 easy to understand charts, weekly group tutoring sessions, private tutoring, and many exclusives you won't find anywhere else.</p>
               <div class="pt-5 mb-[45px]">
                 <a href="#" class="btn btn_enroll">Enroll in OT Exam Prep</a>
@@ -786,23 +827,23 @@
       $(document).ready(function () {
         const owlProgramsSlider = $("#program-slider");
         owlProgramsSlider.owlCarousel({
-          // autoPlay: 3000, //Set AutoPlay to 3 seconds
-          // autoplay: true,
-          // autoplayTimeout: 5000,
+          autoPlay: 3000, //Set AutoPlay to 3 seconds
+          autoplay: true,
+          autoplayTimeout: 5000,
           loop: true,
           nav: true,
           dots: false,
           items: 1,
         });
         owlProgramsSlider.on("changed.owl.carousel", function (event) {
-          const slideIndex = event.item.index - 2;
+          const slideIndex = event.item.index;
+          const activeThumbIndex = slideIndex - 3;
           $("#program-slider-nav li").removeClass("active");
-          $("#program-slider-nav li").eq(slideIndex).addClass("active");
+          $("#program-slider-nav li").eq(activeThumbIndex).addClass("active");
         });
         $("#program-slider-nav li").on("click", function (el) {
           var slideIndex = $(this).index();
           owlProgramsSlider.trigger("to.owl.carousel", slideIndex);
-          // console.log(el);
         });
         $("#tutors-slider").owlCarousel({
           // autoPlay: 3000, //Set AutoPlay to 3 seconds
@@ -829,6 +870,16 @@
           itemsDesktop: [1199, 3],
           itemsDesktopSmall: [979, 1],
           autoHeight: false,
+        });
+        $(".package-box").on("click", function () {
+          const el = this;
+          console.log(el);
+          $(".package-box").removeClass("active");
+          const dataTab = $(el).data("tab");
+          console.log(dataTab);
+          $(el).addClass("active");
+          $(".package-tabs .package-tab").removeClass("active");
+          $("#" + dataTab).addClass("active");
         });
       });
     </script>
