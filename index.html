@@ -5,6 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PassTheOt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -12,11 +14,11 @@
     <div id="app">
       <div class="app-head">
         <div class="mx-container">
-          <div class="lg:flex lg:pt-[31px] lg:pb-[24px] lg:justify-between lg:items-center">
-            <strong class="logo"
+          <div class="py-[22px] lg:flex lg:pt-[31px] lg:pb-[24px] lg:justify-between lg:items-center">
+            <strong class="logo w-[153px] block"
               ><a href="#"><img src="/logo.png" alt="path the ot" /></a
             ></strong>
-            <nav class="main-nav">
+            <nav class="main-nav max-lg:hidden">
               <ul class="main-menu">
                 <li><a href="#">OT Exam Prep</a></li>
                 <li><a href="#">OTA Exam Prep</a></li>
@@ -25,7 +27,7 @@
                 <li><a href="#">About Us</a></li>
               </ul>
             </nav>
-            <div class="additional-nav lg:flex lg:gap-2 lg:items-center">
+            <div class="additional-nav lg:flex lg:gap-2 lg:items-center max-lg:hidden">
               <div class="search-form">
                 <form action="#s"><input type="text" id="search" placeholder="Search" /></form>
               </div>
@@ -39,10 +41,10 @@
       </div>
       <!-- content -->
       <main>
-        <div id="hero" class="overflow-hidden text-white bg-blue py-[60px] xl:py-[111px] bg-gradient-to-b from-[#2E5B94] to-[#0F3C75] relative">
+        <div id="hero" class="overflow-hidden text-white bg-blue pt-12 pb-7 lg:py-[60px] xl:py-[111px] bg-gradient-to-b from-[#2E5B94] to-[#0F3C75] relative">
           <div class="mx-container">
-            <div class="hero-wrap grid grid-cols-12 xl:flex">
-              <div class="hero-content col-span-7 xl:flex-grow-0 xl:flex-shrink-0 xl:w-[660px]">
+            <div class="hero-wrap lg:grid lg:grid-cols-12 xl:flex">
+              <div class="hero-content lg:col-span-7 xl:flex-grow-0 xl:flex-shrink-0 xl:w-[660px]">
                 <h4>OT AND OTA EXAM PREP</h4>
                 <h1>Get everything you need to pass the NBCOT® Exam</h1>
                 <h5>Find success with a system that has helped thousands of first time and repeat test takers.</h5>
@@ -64,13 +66,13 @@
                     <span class="icon"> <img src="/icons/icon-5.svg" alt="" /> </span> <strong>Know what to study </strong> with our structured modules and assessment tests.
                   </li>
                 </ul>
-                <div class="grid grid-cols-2 gap-4">
+                <div class="grid md:grid-cols-2 gap-4">
                   <a href="#" class="btn">Enroll in OT Exam Prep</a>
                   <a href="#" class="btn">Enroll in OTA Exam Prep</a>
                 </div>
-                <p class="text-center font-semibold text-base pt-[34px]"><a href="#" class="underline hover:no-underline">I’M A PROGRAM DIRECTOR</a></p>
+                <p class="text-center font-semibold text-base pt-5 md:pt-[34px]"><a href="#" class="underline hover:no-underline">I’M A PROGRAM DIRECTOR</a></p>
               </div>
-              <div class="col-span-5 hero-picture absolute left-[60%] xl:left-[55.4%] top-0 bottom-0 right-0">
+              <div class="max-lg:hidden lg:col-span-5 hero-picture absolute left-[60%] xl:left-[55.4%] top-0 bottom-0 right-0">
                 <span class="z-10 hero-bonus absolute left-0 -translate-x-1/2 top-[168px] block w-[78px] h-[78px]"><img src="/bonus.png" alt="as low as $69" /></span>
                 <div class="hero-bg-picture absolute top-0 bottom-0 right-0 left-0"></div>
               </div>
@@ -80,8 +82,8 @@
         <!-- awards -->
         <div class="main-section pb-24">
           <div class="mx-container">
-            <div class="pt-[118px] pb-[103px]">
-              <div class="awards-slider">
+            <div class="py-12 lg:pt-[118px] lg:pb-[103px]">
+              <div class="awards-slider owl-carousel" id="owl-awards">
                 <div class="slide">
                   <div class="award-block">
                     <div class="award-block__thumb">
@@ -118,7 +120,7 @@
               <div class="section-head">
                 <h2>Structured and flexible course that simplifies studying and benefits every type of learner.</h2>
               </div>
-              <div class="structure-grid grid grid-cols-3 gap-8 mb-12">
+              <div class="structure-grid grid lg:grid-cols-3 gap-4 lg:gap-8 mb-12">
                 <article class="structure-box">
                   <span class="structure-box_label">We Offer Accommodation Quizzes!</span>
                   <div class="structure-box__head">
@@ -187,16 +189,16 @@
                   </div>
                 </article>
               </div>
-              <h5 class="text-center mb-[50px] text-blue title-type-1">And <mark>many other exclusives</mark> you won't find anywhere else, that makes studying so much easier.</h5>
-              <div class="actions-btns flex justify-center gap-6 mb-[87px]">
+              <h5 class="text-center mb-[50px] text-blue title-type-1 leading-relaxed">And <mark>many other exclusives</mark> you won't find anywhere else, that makes studying so much easier.</h5>
+              <div class="actions-btns grid md:flex md:justify-center gap-4 md:gap-6 mb-[87px]">
                 <a href="#" class="btn btn_wider">ENROLL IN OT Exam Prep</a>
                 <a href="#" class="btn btn_wider">ENROLL IN OTA Exam Prep</a>
               </div>
-              <div class="quote-block quote-block_white mb-[105px]">
+              <div class="quote-block quote-block_white mb-10 lg:mb-[105px]">
                 <q>Your program is completely unique in the approach, and I am now convinced that it made all the difference in helping my former students pass the NBCOT® exam.</q>
                 <cite>Jeanne Gorman OT®/L Director, OTA Program Director, Connors State College</cite>
               </div>
-              <div class="conmparison-section">
+              <div class="conmparison-section max-md:hidden">
                 <div class="section-head">
                   <h2>Comparison with other Prep Courses</h2>
                   <p>Pass the OT compared to other study prep for the NBCOT® Exam.</p>
@@ -327,7 +329,7 @@
           </div>
         </div>
         <!-- awards end -->
-        <div class="bg-blue text-white pt-20 pb-[70px] text-center guarantee-box">
+        <div class="bg-blue text-white pt-10 lg:pt-20 pb-[60px] lg:pb-[70px] text-center guarantee-box">
           <div class="mx-container">
             <div class="mx-auto max-w-4xl">
               <div class="flex justify-center mb-6">
@@ -335,12 +337,12 @@
                   <img src="/icons/icon-guarantee.svg" alt="" />
                 </div>
               </div>
-              <div class="mb-[47px] text-center">
+              <div class="mb-6 md:mb-[47px] text-center">
                 <p>If you do not pass after using one of our paid packages, we will provide you our web course at no cost for the duration that you previously purchased it for as well as a $40 discount to purchase for private tutoring sessions.</p>
               </div>
               <h5>We have helped thousands students, just like you:</h5>
             </div>
-            <div class="bonus-row grid grid-cols-3 gap-8 mb-12 pt-4">
+            <div class="max-w-md lg:max-w-full mx-auto bonus-row grid lg:grid-cols-3 gap-4 lg:gap-8 mb-12 pt-4">
               <div class="bonus-box">
                 <strong class="bonus-box__value">101 Pts</strong>
                 <span class="bonus-box__label">Highest Score Increase</span>
@@ -360,14 +362,14 @@
             </div>
           </div>
         </div>
-        <section class="about-section bg-[#DDE8F6] pt-[115px] pb-20">
+        <section class="about-section bg-[#DDE8F6] py-10 lg:pt-[115px] lg:pb-20">
           <div class="mx-container">
             <div class="quote-block">
               <q>Pas the OT made a world of a difference for me. I had Erika as my tutor who is very educated on topics of the field and the testing topics. She was able to explain things to me I never knew about and i was truly happy. I received a passing grade of 471 when last time I got a 444”</q>
               <cite>Pakize A.</cite>
             </div>
-            <div class="about-wrap flex gap-10 xl:gap-[120px] pt-20">
-              <div class="about-wrap__thumb w-[400px] xl:w-[600px] flex-grow-0 shrink-0">
+            <div class="about-wrap flex flex-col-reverse md:flex-row gap-10 xl:gap-[120px] pt-20">
+              <div class="about-wrap__thumb md:w-[300px] lg:w-[400px] xl:w-[600px] flex-grow-0 shrink-0">
                 <img src="/about-thumb.png" alt="" />
               </div>
               <div class="text-center about-content">
@@ -390,7 +392,7 @@
               <h2>Past students reviews</h2>
               <p>Join the 42,000+ happy students who passed the NBCOT® exam with the help of our program.</p>
             </div>
-            <div class="grid grid-cols-2 gap-8">
+            <div class="grid lg:grid-cols-2 gap-6 lg:gap-8">
               <article class="review-box">
                 <div class="review-box__thumb">
                   <img src="/reviews/thumb-1.jpg" alt="Best Learning Program" />
@@ -447,9 +449,9 @@
       </main>
       <!-- footer -->
       <div class="app-footer">
-        <div class="app-footer-1 lg:pt-[70px] lg:pb-20">
+        <div class="app-footer-1 py-10 lg:pt-[70px] lg:pb-20">
           <div class="mx-container">
-            <div class="lg:grid lg:grid-cols-12 xl:flex gap-2">
+            <div class="md:grid grid-cols-2 lg:grid-cols-12 xl:flex gap-6 lg:gap-2">
               <div class="widget lg:col-span-3 xl:w-[353px]">
                 <h3 class="widget-title">Exam Prep</h3>
                 <ul class="menu">
@@ -497,10 +499,10 @@
             </div>
           </div>
         </div>
-        <div class="app-footer-2 text-[#B4BACE] bg-blue lg:py-10 text-sm">
+        <div class="app-footer-2 text-[#B4BACE] bg-blue py-6 lg:py-10 text-sm">
           <div class="mx-container">
             <div class="lg:grid lg:grid-cols-12 xl:flex">
-              <div class="lg:col-span-4 xl:w-[480px] xl:flex-shrink-0 xl:flex-grow-0 flex items-center">
+              <div class="lg:col-span-4 xl:w-[480px] xl:flex-shrink-0 xl:flex-grow-0 flex items-center pb-6 lg:pb-0">
                 <strong class="logo"
                   ><a href="#"><img src="/f-logo.png" alt="path the ot" /></a
                 ></strong>
@@ -518,5 +520,22 @@
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#owl-awards").owlCarousel({
+          // autoPlay: 3000, //Set AutoPlay to 3 seconds
+          autoplay: true,
+          autoplayTimeout: 5000,
+          loop: true,
+          nav: false,
+          dots: true,
+          items: 1,
+          itemsDesktop: [1199, 3],
+          itemsDesktopSmall: [979, 1],
+        });
+      });
+    </script>
   </body>
 </html>

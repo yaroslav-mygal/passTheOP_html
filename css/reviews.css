@@ -1,12 +1,12 @@
 /* review-box */
 .review-box {
-  @apply p-8 border-[#B4BACE] border border-solid rounded-lg flex gap-8;
+  @apply p-6 sm:p-8 border-[#B4BACE] border border-solid rounded-lg sm:flex gap-8;
 }
 .review-box .review-box__thumb {
-  @apply w-40 grow-0 shrink-0;
+  @apply mb-8 sm:mb-0 w-40 grow-0 shrink-0;
 }
 .review-box .review-box__content {
-  @apply grow pt-[0.4rem] flex flex-col justify-between;
+  @apply grow pt-[0.4rem] sm:flex sm:flex-col sm:justify-between;
 }
 .review-box h5,
 .review-box__content h6 {
@@ -17,6 +17,9 @@
 }
 .review-box__content h6 {
   @apply mb-0;
+}
+.review-box__content div:nth-child(2) {
+  @apply pt-6 sm:pt-0;
 }
 .review-box .review-box__role {
   @apply uppercase text-sm font-medium block;

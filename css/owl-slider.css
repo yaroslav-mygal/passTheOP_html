@@ -6,6 +6,7 @@
   top: 50%;
   left: -28px;
   right: -28px;
+  @apply h-[54px] -translate-y-1/2;
 }
 .owl-nav .owl-prev,
 .owl-nav .owl-next {
@@ -56,4 +57,20 @@
 }
 .program-slider-nav li.active img {
   border: 2px solid #62697c;
+}
+.owl-dots {
+  @apply flex justify-center gap-4 pt-8;
+}
+.owl-dots .owl-dot {
+  @apply w-3 h-3 rounded-full !bg-blue opacity-20;
+}
+.owl-dots .owl-dot.active {
+  @apply opacity-100;
+}
+.owl-carousel .owl-stage {
+  @apply !flex;
+}
+#courses-slider .owl-item,
+#tutors-slider .owl-item {
+  @apply flex;
 }
