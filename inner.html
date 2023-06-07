@@ -48,9 +48,8 @@
               <p>Structured and flexible course that simplifies studying and benefits every type of learner.</p>
             </div>
           </div>
-
-          <div class="details-section flex gap-20">
-            <div class="flex-grow-0 flex-shrink-0 w-[600px]">
+          <div class="details-section flex gap-12 xl:gap-20">
+            <div class="flex-grow-0 flex-shrink-0 w-[420px] xl:w-[600px]">
               <div class="sticky top-4">
                 <div class="details-slider mb-6">
                   <div class="program-slider owl-carousel" id="program-slider">
@@ -228,7 +227,7 @@
             </div>
           </div>
           <div class="pt-[128px] pb-[120px]">
-            <div class="awards-slider">
+            <div class="awards-slider owl-carousel" id="owl-awards">
               <div class="slide">
                 <div class="award-block">
                   <div class="award-block__thumb">
@@ -823,65 +822,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        const owlProgramsSlider = $("#program-slider");
-        owlProgramsSlider.owlCarousel({
-          autoPlay: 3000, //Set AutoPlay to 3 seconds
-          autoplay: true,
-          autoplayTimeout: 5000,
-          loop: true,
-          nav: true,
-          dots: false,
-          items: 1,
-        });
-        owlProgramsSlider.on("changed.owl.carousel", function (event) {
-          const slideIndex = event.item.index;
-          const activeThumbIndex = slideIndex - 3;
-          $("#program-slider-nav li").removeClass("active");
-          $("#program-slider-nav li").eq(activeThumbIndex).addClass("active");
-        });
-        $("#program-slider-nav li").on("click", function (el) {
-          var slideIndex = $(this).index();
-          owlProgramsSlider.trigger("to.owl.carousel", slideIndex);
-        });
-        $("#tutors-slider").owlCarousel({
-          // autoPlay: 3000, //Set AutoPlay to 3 seconds
-          autoplay: true,
-          autoplayTimeout: 5000,
-          loop: true,
-          nav: true,
-          dots: false,
-          items: 3,
-          margin: 32,
-          itemsDesktop: [1199, 3],
-          itemsDesktopSmall: [979, 1],
-        });
-
-        $("#courses-slider").owlCarousel({
-          // autoPlay: 3000, //Set AutoPlay to 3 seconds
-          autoplay: true,
-          autoplayTimeout: 5000,
-          loop: true,
-          nav: true,
-          dots: false,
-          items: 3,
-          margin: 32,
-          itemsDesktop: [1199, 3],
-          itemsDesktopSmall: [979, 1],
-          autoHeight: false,
-        });
-        $(".package-box").on("click", function () {
-          const el = this;
-          console.log(el);
-          $(".package-box").removeClass("active");
-          const dataTab = $(el).data("tab");
-          console.log(dataTab);
-          $(el).addClass("active");
-          $(".package-tabs .package-tab").removeClass("active");
-          $("#" + dataTab).addClass("active");
-        });
-      });
-    </script>
+    <script src="main.js"></script>
+    <script src="inner-main.js"></script>
   </body>
 </html>

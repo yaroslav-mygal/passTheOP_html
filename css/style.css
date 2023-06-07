@@ -46,10 +46,22 @@
 }
 .form-subscribe input[type="text"],
 .form-subscribe input[type="email"] {
-  @apply bg-white h-[50px] text-base py-4 px-6 rounded-l-lg grow placeholder:text-[#62697C];
+  @apply bg-white h-[50px] text-base py-3 md:py-4 px-3 md:px-6 rounded-l-lg grow placeholder:text-[#62697C] text-black;
 }
 .form-subscribe input[type="submit"] {
-  @apply uppercase bg-blue text-white font-bold border-0 h-[50px] rounded-r-lg w-[226px] grow-0 text-base;
+  @apply md:uppercase bg-blue text-white font-bold border-0 h-[50px] rounded-r-lg w-[165px] md:w-[226px] grow-0 text-base;
+}
+@media screen and (max-width: 400px) {
+  .form-subscribe {
+    @apply flex-col;
+  }
+  .form-subscribe input[type="text"],
+  .form-subscribe input[type="email"] {
+    @apply rounded-t-lg rounded-b-none text-center;
+  }
+  .form-subscribe input[type="submit"] {
+    @apply rounded-b-lg rounded-t-none w-full;
+  }
 }
 /* reviews-section */
 .reviews-section {
@@ -131,7 +143,7 @@
 }
 /* award-block */
 .award-block {
-  @apply flex items-center gap-4;
+  @apply flex items-center gap-4 px-1 xl:px-0;
 }
 .award-block .award-block__rate {
   @apply font-bold;
@@ -153,7 +165,7 @@
   @apply mb-[6px] flex gap-4 lg:min-h-[58px];
 }
 .structure-box .structure-box__head h5 {
-  @apply pt-1 lg:pt-0;
+  @apply pt-0 lg:pt-0;
 }
 .structure-box .structure-box__head .course-icon {
   @apply bg-primary text-white text-base font-bold h-6 w-6 text-center inline-block rounded-full flex-shrink-0 flex-grow-0 pt-[2px];

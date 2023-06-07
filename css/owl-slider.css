@@ -53,7 +53,7 @@
 .program-slider-nav li img {
   border: 1px solid #b4bace;
   border-radius: 8px;
-  @apply w-[88px] h-[88px];
+  @apply w-[88px];
 }
 .program-slider-nav li.active img {
   border: 2px solid #62697c;

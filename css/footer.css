@@ -7,6 +7,9 @@
 .app-footer-1 .widget h3 {
   @apply text-blue text-[22px] font-semibold mb-4;
 }
+.app-footer-1 .widget {
+  @apply max-md:last:pt-8;
+}
 .app-footer-1 .widget .menu li {
   @apply mb-4;
 }
@@ -18,4 +21,28 @@
 }
 .footer-menu a {
   @apply text-white;
+}
+.footer-widget {
+  @apply max-md:first:border-none max-md:border-solid max-md:border-t-2 max-md:border-[#B4BACE];
+}
+.app-footer-1 .footer-widget .widget-title {
+  @apply max-md:mb-0 max-md:py-3 max-md:relative;
+}
+.app-footer-1 .footer-widget .widget-title:after {
+  @apply max-md:content-['+'] max-md:right-2 max-md:top-1/2 max-md:-translate-y-1/2 max-md:absolute text-2xl;
+}
+.app-footer-1 .footer-widget.active .widget-title:after {
+  @apply max-md:content-['-'];
+}
+.footer-widget .menu {
+  @apply max-md:hidden;
+}
+.footer-widget.active .menu {
+  @apply block;
+}
+.app-footer-2 .footer-menu {
+  @apply max-md:flex-wrap;
+}
+.app-footer-2 .footer-menu li {
+  @apply max-md:first:w-full;
 }
