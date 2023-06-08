@@ -70,3 +70,10 @@
   background: #0e3b74 url("/icons/arrow-down.svg") no-repeat 50% 50%;
   background-size: 13px 12px;
 }
+.panel-collapse {
+  display: none;
+}
+.panel-collapse.open {
+  display: block;
+  visibility: visible;
+}

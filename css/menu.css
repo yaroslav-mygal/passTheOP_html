@@ -1,9 +1,41 @@
 .main-menu {
-  @apply flex gap-6;
+  @apply flex gap-6 lg:gap-2 xl:gap-6;
 }
 @media screen and (max-width: 1024px) {
+  #app {
+    @apply pt-[68px];
+  }
   .app-head.open .nav-wrap {
-    @apply fixed bg-white top-0 bottom-0 left-0 w-4/5 block;
+    @apply fixed bg-white top-0 bottom-0 left-0 w-4/5 z-10 pt-[88px] px-6 flex flex-col justify-between;
+  }
+  .app-head.open .main-nav .main-menu li:nth-child(1) a,
+  .app-head.open .main-nav .main-menu li:nth-child(2) a {
+    @apply font-bold;
+  }
+  .app-head.open .main-nav {
+    @apply pt-6;
+  }
+  .app-head {
+    @apply fixed left-0 right-0 bg-white top-0 z-20;
+  }
+  .app-head.open {
+  }
+  .app-head.open .logo,
+  .app-head.open .head-btn-holder {
+    @apply z-20;
+  }
+  .main-menu {
+    @apply flex-col;
+  }
+  .additional-nav {
+    @apply border-t border-solid border-gray-500 pt-5 pb-8;
+  }
+  .nav-wrap .search-form #search {
+    @apply border border-solid border-gray-500 w-full rounded-[6px] pl-10;
+    background-position: 14px 50%;
+  }
+  .additional-nav .main-menu li {
+    @apply pt-4;
   }
 }
 .main-menu > li {

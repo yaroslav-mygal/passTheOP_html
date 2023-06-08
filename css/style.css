@@ -9,6 +9,9 @@
 @import url("faq.css");
 @import url("owl-slider.css");
 
+html {
+  scroll-behavior: smooth;
+}
 /* typography */
 .page-container,
 .is-layout-constrained,
@@ -80,11 +83,11 @@
   @apply mb-8;
 }
 .section-head.section-head_inner {
-  @apply mb-[56px] bg-[#DDE8F6] border border-[#B4BACE] rounded-lg p-6 pt-8 pb-7 w-full max-w-full;
+  @apply lg:mb-[56px] bg-[#DDE8F6] border border-[#B4BACE] rounded-lg p-6 lg:p-6 lg:pt-8 lg:pb-7 w-full max-w-full;
 }
 .section-head.section-head_inner h2,
 .section-head.section-head_inner h1 {
-  @apply mb-[4px];
+  @apply mb-[4px] max-lg:text-[20px];
 }
 .sessions-section .section-head {
   @apply max-w-full text-2xl;

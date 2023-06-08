@@ -1,5 +1,5 @@
 .app-head {
-  @apply text-base border-b border-gray-500;
+  @apply text-base border-b border-gray-500 bg-white;
 }
 .app-head a {
   @apply text-current;

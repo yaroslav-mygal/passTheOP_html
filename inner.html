@@ -12,29 +12,34 @@
   </head>
   <body>
     <div id="app">
-      <div class="app-head">
+      <div class="app-head group">
         <div class="mx-container">
-          <div class="lg:flex lg:pt-[31px] lg:pb-[24px] lg:justify-between lg:items-center">
-            <strong class="logo"
+          <div class="py-3 flex lg:pt-[31px] lg:pb-[24px] justify-between items-center relative max-lg:pl-[37px]">
+            <button class="nav-toggle lg:hidden" id="init-mobile-menu"><span>Menu</span></button>
+            <strong class="logo w-[153px] block"
               ><a href="#"><img src="/logo.png" alt="path the ot" /></a
             ></strong>
-            <nav class="main-nav">
-              <ul class="main-menu">
-                <li><a href="#">OT Exam Prep</a></li>
-                <li><a href="#">OTA Exam Prep</a></li>
-                <li><a href="#">Personal Tutoring</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">About Us</a></li>
-              </ul>
-            </nav>
-            <div class="additional-nav lg:flex lg:gap-6 lg:items-center">
-              <div class="search-form">
-                <form action="#s"><input type="text" id="search" placeholder="Search" /></form>
+            <div class="nav-wrap max-lg:hidden lg:flex lg:items-center lg:justify-between lg:grow lg:pl-3 xl:pl-6 lg:pr-3 xl:pr-6">
+              <nav class="main-nav xl:grow xl:flex xl:justify-center">
+                <ul class="main-menu">
+                  <li><a href="#">OT Exam Prep</a></li>
+                  <li><a href="#">OTA Exam Prep</a></li>
+                  <li><a href="#">Personal Tutoring</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">About Us</a></li>
+                </ul>
+              </nav>
+              <div class="additional-nav lg:flex lg:gap-2 lg:items-center xl:grow-0">
+                <div class="search-form">
+                  <form action="#s"><input type="text" id="search" placeholder="Search" /></form>
+                </div>
+                <ul class="main-menu">
+                  <li><a href="#">Login</a></li>
+                </ul>
               </div>
-              <ul class="main-menu">
-                <li><a href="#">Login</a></li>
-                <li class="btn"><a href="#">ENROLL NOW</a></li>
-              </ul>
+            </div>
+            <div class="max-lg:hidden max-lg:group-[.open]:block head-btn-holder">
+              <a href="#" class="btn">ENROLL NOW</a>
             </div>
           </div>
         </div>
@@ -48,8 +53,8 @@
               <p>Structured and flexible course that simplifies studying and benefits every type of learner.</p>
             </div>
           </div>
-          <div class="details-section flex gap-12 xl:gap-20">
-            <div class="flex-grow-0 flex-shrink-0 w-[420px] xl:w-[600px]">
+          <div class="details-section lg:flex gap-12 xl:gap-20">
+            <div class="lg:flex-grow-0 lg:flex-shrink-0 lg:w-[420px] xl:w-[600px]">
               <div class="sticky top-4">
                 <div class="details-slider mb-6">
                   <div class="program-slider owl-carousel" id="program-slider">
@@ -82,15 +87,15 @@
             <div class="program-content">
               <nav class="program-nav">
                 <ul>
-                  <li class="active"><a href="#">Overview</a></li>
-                  <li><a href="#">Group Tutoring</a></li>
-                  <li><a href="#">Our Process</a></li>
-                  <li><a href="#">Schedule</a></li>
-                  <li><a href="#">Compare</a></li>
-                  <li><a href="#">Reviews</a></li>
+                  <li class="active"><a class="scrollTo" href="#overview">Overview</a></li>
+                  <li><a class="scrollTo" href="#group-tutoring">Group Tutoring</a></li>
+                  <li><a class="scrollTo" href="#our-process">Our Process</a></li>
+                  <li><a class="scrollTo" href="#schedule">Schedule</a></li>
+                  <li><a class="scrollTo" href="#compare">Compare</a></li>
+                  <li><a class="scrollTo" href="#reviews">Reviews</a></li>
                 </ul>
               </nav>
-              <h2 class="title-1">OT Exam Prep Program</h2>
+              <h2 class="title-1" id="overview">OT Exam Prep Program</h2>
               <div class="program-rate flex gap-2 items-center mb-10 leading-6">
                 <strong>4.9</strong>
                 <div class="stars w-[98px]"><img src="/stars.png" alt="stars" /></div>
@@ -261,7 +266,7 @@
             </div>
           </div>
         </div>
-        <div class="sessions-section bg-[#DDE8F6]">
+        <div class="sessions-section bg-[#DDE8F6]" id="group-tutoring">
           <div class="mx-container">
             <div class="section-head">
               <h2>Weekly group tutoring sessions</h2>
@@ -369,7 +374,7 @@
             </div>
           </div>
         </div>
-        <div class="exam-section pt-[70px]">
+        <div class="exam-section pt-[70px]" id="our-process">
           <div class="mx-container">
             <div class="section-head">
               <h2>Pass the exam using our unique formula:</h2>
@@ -444,7 +449,7 @@
                   </div>
                   <!-- head end -->
                   <!-- body -->
-                  <div id="collapseTwotop" class="panel-collapse panel-collapse1 collapse in" aria-expanded="true" style="display: none">
+                  <div id="collapseTwotop" class="panel-collapse panel-collapse1 collapse in" aria-expanded="true">
                     <div class="panel-body">
                       <div class="panel-body">
                         <div id="accordion21p" class="panel-group">
@@ -532,7 +537,7 @@
         </div>
         <div class="main-section pb-24">
           <div class="mx-container">
-            <div class="courses-section">
+            <div class="courses-section mb-[60px]">
               <div class="section-head">
                 <h2>Course Outline</h2>
               </div>
@@ -612,7 +617,7 @@
               </div>
             </div>
 
-            <div class="structure-section pt-[136px] mb-[120px]">
+            <div class="structure-section pt-[60px] mb-[120px]" id="compare">
               <div class="conmparison-section">
                 <div class="section-head">
                   <h2>Comparison with other Prep Courses</h2>
@@ -741,7 +746,7 @@
                 </div>
               </div>
             </div>
-            <div class="section-head">
+            <div class="section-head" id="reviews">
               <h2>Customer Reviews</h2>
             </div>
           </div>

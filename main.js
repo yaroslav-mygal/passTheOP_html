@@ -28,7 +28,10 @@ $(document).ready(function () {
   $(".app-footer-1 .footer-widget .widget-title").on("click", function () {
     $(this).parent().toggleClass("active");
   });
-  $('#init-mobile-menu').on('click', function(){
-    $(".app-head").toggleClass('open')
-  })
+  $("#init-mobile-menu").on("click", function () {
+    $(".app-head").toggleClass("open");
+  });
+  $(".panel-group .panel-heading").on("click", function () {
+    $(this).next(".panel-collapse").toggleClass("open");
+  });
 });

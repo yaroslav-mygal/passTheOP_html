@@ -12,15 +12,15 @@
   </head>
   <body>
     <div id="app">
-      <div class="app-head open group">
+      <div class="app-head group">
         <div class="mx-container">
-          <div class="py-[22px] flex lg:pt-[31px] lg:pb-[24px] justify-between items-center relative max-lg:pl-[37px]">
-            <button class="nav-toggle" id="init-mobile-menu"><span>Menu</span></button>
+          <div class="py-3 flex lg:pt-[31px] lg:pb-[24px] justify-between items-center relative max-lg:pl-[37px]">
+            <button class="nav-toggle lg:hidden" id="init-mobile-menu"><span>Menu</span></button>
             <strong class="logo w-[153px] block"
               ><a href="#"><img src="/logo.png" alt="path the ot" /></a
             ></strong>
-            <div class="nav-wrap">
-              <nav class="main-nav">
+            <div class="nav-wrap max-lg:hidden lg:flex lg:items-center lg:justify-between lg:grow lg:pl-3 xl:pl-6 lg:pr-3 xl:pr-6">
+              <nav class="main-nav xl:grow xl:flex xl:justify-center">
                 <ul class="main-menu">
                   <li><a href="#">OT Exam Prep</a></li>
                   <li><a href="#">OTA Exam Prep</a></li>
@@ -29,7 +29,7 @@
                   <li><a href="#">About Us</a></li>
                 </ul>
               </nav>
-              <div class="additional-nav lg:flex lg:gap-2 lg:items-center">
+              <div class="additional-nav lg:flex lg:gap-2 lg:items-center xl:grow-0">
                 <div class="search-form">
                   <form action="#s"><input type="text" id="search" placeholder="Search" /></form>
                 </div>
@@ -38,7 +38,7 @@
                 </ul>
               </div>
             </div>
-            <div class="max-lg:hidden max-lg:group-[.open]:block">
+            <div class="max-lg:hidden max-lg:group-[.open]:block head-btn-holder">
               <a href="#" class="btn">ENROLL NOW</a>
             </div>
           </div>
@@ -78,7 +78,7 @@
                 <p class="text-center font-semibold text-base pt-5 md:pt-[34px]"><a href="#" class="underline hover:no-underline">I’M A PROGRAM DIRECTOR</a></p>
               </div>
               <div class="lg:col-span-5 hero-picture absolute left-0 lg:left-[60%] xl:left-[55.4%] top-0 lg:bottom-0 right-0">
-                <span class="max-lg:-translate-y-1/2 z-10 hero-bonus absolute left-[80%] lg:left-0 lg:-translate-x-1/2 top-0 lg:top-[168px] block w-[78px] h-[78px]"><img src="/bonus.png" alt="as low as $69" /></span>
+                <span class="z-10 hero-bonus absolute left-[80%] lg:left-0 lg:-translate-x-1/2 top-0 lg:top-[168px] block w-[78px] h-[78px]"><img src="/bonus.png" alt="as low as $69" /></span>
                 <div class="max-lg:hidden hero-bg-picture absolute top-0 bottom-0 right-0 left-0"></div>
               </div>
             </div>
