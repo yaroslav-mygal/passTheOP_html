@@ -7,3 +7,58 @@
 .app-head .logo {
   @apply w-[153px];
 }
+
+.nav-toggle {
+  --menuColor: #62697c;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  z-index: 2000;
+  transform: translateY(-50%);
+}
+
+.nav-toggle::before,
+.nav-toggle::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  background: var(--menuColor);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s;
+}
+
+.nav-toggle::before {
+  transform: translate3d(0, -10px, 0);
+}
+.nav-toggle::after {
+  transform: translate3d(0, 10px, 0);
+}
+.nav-toggle span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--menuColor);
+  left: 0;
+  overflow: hidden;
+  text-indent: 200%;
+  transition: opacity 0.25s;
+}
+.open .nav-toggle span {
+  opacity: 0;
+}
+.open .nav-toggle::before {
+  transform: rotate3d(0, 0, 1, 45deg);
+}
+.open .nav-toggle::after {
+  transform: rotate3d(0, 0, 1, -45deg);
+}

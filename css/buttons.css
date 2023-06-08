@@ -10,7 +10,7 @@ a.btn.btn_wider {
 }
 .app-head .btn > a,
 .app-head a.btn {
-  @apply text-[15px] py-3;
+  @apply text-[15px] px-4 max-lg:px-4 leading-[30px] xl:leading-snug h-[44px] xl:h-auto py-2 xl:py-3;
 }
 .hero-content .btn {
   @apply h-[62px] py-5;
