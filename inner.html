@@ -44,6 +44,30 @@
           </div>
         </div>
       </div>
+      <!-- additional head -->
+      <div id="additional-head">
+        <div class="mx-container">
+          <div class="flex justify-between">
+            <div class="ad-left">
+              <strong class="ad-program">OT Exam Prep Program</strong>
+              <span class="ad-program-description" id="head-selected-program">$199 I Bronze 60-day Access + Private tutoring</span>
+            </div>
+            <div class="ad-right justify-end items-end hidden md:flex">
+              <nav class="program-nav">
+                <ul>
+                  <li class="active"><a class="scrollTo" href="#overview">Overview</a></li>
+                  <li><a class="scrollTo" href="#group-tutoring">Group Tutoring</a></li>
+                  <li><a class="scrollTo" href="#our-process">Our Process</a></li>
+                  <li><a class="scrollTo" href="#schedule">Schedule</a></li>
+                  <li><a class="scrollTo" href="#compare">Compare</a></li>
+                  <li><a class="scrollTo" href="#reviews">Reviews</a></li>
+                </ul>
+              </nav>
+              <a href="#" class="btn">ENROLL NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- content -->
       <main>
         <div class="mx-container">
@@ -107,19 +131,19 @@
               <div class="packages-group">
                 <h6>Program access only:</h6>
                 <div class="grid grid-cols-3 gap-2">
-                  <article class="package-box" data-tab="package-tab-1">
+                  <article class="package-box" data-tab="package-tab-1" data-program="$69 | EXPRESS 14-day Access">
                     <strong class="package-box__head">EXPRESS | $69</strong>
                     <div class="package-box__content">
                       <p>Access: 14 days</p>
                     </div>
                   </article>
-                  <article class="package-box" data-tab="package-tab-2">
+                  <article class="package-box" data-tab="package-tab-2" data-program="$99 | CRASH COURSE 30-day Access">
                     <strong class="package-box__head">CRASH COURSE | $99</strong>
                     <div class="package-box__content">
                       <p>Access: 30 days</p>
                     </div>
                   </article>
-                  <article class="package-box" data-tab="package-tab-3">
+                  <article class="package-box" data-tab="package-tab-3" data-program="$139 | FIRST TIME 90-day Access">
                     <strong class="package-box__head">FIRST TIME | $139</strong>
                     <div class="package-box__content">
                       <p>Access: 90 days</p>
@@ -130,7 +154,7 @@
               <div class="packages-group">
                 <h6>Program access + Private tutoring package:</h6>
                 <div class="grid grid-cols-3 gap-2">
-                  <article class="package-box bronze" data-tab="package-tab-4">
+                  <article class="package-box bronze" data-tab="package-tab-4"  data-program="$199 | Bronze 60-day Access + Private tutoring">
                     <strong class="package-box__head !bg-[#BC7A38]">BRONZE | $199</strong>
                     <div class="package-box__content">
                       <p>
@@ -139,7 +163,7 @@
                       </p>
                     </div>
                   </article>
-                  <article class="package-box silver" data-tab="package-tab-5">
+                  <article class="package-box silver" data-tab="package-tab-5" data-program="$565 | GOLD 180-day Access + 7 Private tutoring">
                     <strong class="package-box__head !bg-[#828282]">SILVER | $375</strong>
                     <div class="package-box__content">
                       <p>
@@ -151,7 +175,7 @@
                       <span class="label bg-[#1693C7] text-white inline-block pt-[2px] px-4 rounded">Most Popular</span>
                     </span>
                   </article>
-                  <article class="package-box gold" data-tab="package-tab-6">
+                  <article class="package-box gold" data-tab="package-tab-6" data-program="$375 | SILVER 120-day Access + 4 Private tutoring">
                     <strong class="package-box__head !bg-[#D99D03]">GOLD | $565</strong>
                     <div class="package-box__content">
                       <p>
@@ -162,7 +186,7 @@
                   </article>
                 </div>
               </div>
-              <div class="package-tabs">
+              <div class="package-tabs" id="packages">
                 <div id="package-tab-1" class="package-tab active">
                   <h5 class="mb-6 program-subtitle">$69 <span>|</span> EXPRESS 14-day Access</h5>
                   <ul class="program-details mb-5">
@@ -192,7 +216,6 @@
                   </ul>
                 </div>
                 <div id="package-tab-5" class="package-tab">
-                  SILVER I $375
                   <h5 class="mb-6 program-subtitle">$375 <span>|</span> SILVER 120-day Access + 4 Private tutoring</h5>
                   <ul class="program-details mb-5">
                     <li class="recommended-item"><strong>Recommended for:</strong> First time test takers who want to crush the exam</li>

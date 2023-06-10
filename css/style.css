@@ -8,9 +8,13 @@
 @import url("exams.css");
 @import url("faq.css");
 @import url("owl-slider.css");
+@import url("add-head.css");
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
+}
+main {
+  @apply relative z-0;
 }
 /* typography */
 .page-container,

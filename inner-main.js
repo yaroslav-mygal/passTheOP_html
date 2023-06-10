@@ -69,12 +69,29 @@ $(document).ready(function () {
   });
   $(".package-box").on("click", function () {
     const el = this;
-    console.log(el);
     $(".package-box").removeClass("active");
     const dataTab = $(el).data("tab");
-    console.log(dataTab);
+    const packageTitle = $(el).data("program");
     $(el).addClass("active");
     $(".package-tabs .package-tab").removeClass("active");
     $("#" + dataTab).addClass("active");
+    $("#head-selected-program").text(packageTitle);
   });
 });
+(function () {
+  const packagesHead = document.getElementById("additional-head");
+  const divToWatch = document.querySelector("#packages");
+  const offsetDivTop = divToWatch.offsetTop;
+  document.addEventListener(
+    "scroll",
+    (event) => {
+      const offsetWindowTop = window.scrollY;
+      if (offsetWindowTop > offsetDivTop) {
+        packagesHead.classList.add("active");
+      } else {
+        packagesHead.classList.remove("active");
+      }
+    },
+    { passive: true }
+  );
+})();
