@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PassTheOt</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
@@ -17,7 +17,7 @@
           <div class="py-3 flex lg:pt-[31px] lg:pb-[24px] justify-between items-center relative max-lg:pl-[37px]">
             <button class="nav-toggle lg:hidden" id="init-mobile-menu"><span>Menu</span></button>
             <strong class="logo w-[153px] block"
-              ><a href="#"><img src="/logo.png" alt="path the ot" /></a
+              ><a href="#"><img src="/assets/images/logo.png" alt="path the ot" /></a
             ></strong>
             <div class="nav-wrap max-lg:hidden lg:flex lg:items-center lg:justify-between lg:grow lg:pl-3 xl:pl-6 lg:pr-3 xl:pr-6">
               <nav class="main-nav xl:grow xl:flex xl:justify-center">
@@ -47,14 +47,14 @@
       <!-- additional head -->
       <div id="additional-head">
         <div class="mx-container">
-          <div class="flex justify-between">
+          <div class="flex flex-col md:flex-row justify-between">
             <div class="ad-left">
               <strong class="ad-program">OT Exam Prep Program</strong>
               <span class="ad-program-description" id="head-selected-program">$199 I Bronze 60-day Access + Private tutoring</span>
             </div>
-            <div class="ad-right justify-end items-end hidden md:flex">
+            <div class="ad-right justify-end items-end md:flex">
               <nav class="program-nav">
-                <ul>
+                <ul class="pt-1 pb-[10px] md:py-0">
                   <li class="active"><a class="scrollTo" href="#overview">Overview</a></li>
                   <li><a class="scrollTo" href="#group-tutoring">Group Tutoring</a></li>
                   <li><a class="scrollTo" href="#our-process">Our Process</a></li>
@@ -63,7 +63,9 @@
                   <li><a class="scrollTo" href="#reviews">Reviews</a></li>
                 </ul>
               </nav>
-              <a href="#" class="btn">ENROLL NOW</a>
+              <div class="hidden">
+                <a href="#" class="btn">ENROLL NOW</a>
+              </div>
             </div>
           </div>
         </div>
@@ -82,27 +84,27 @@
               <div class="sticky top-4">
                 <div class="details-slider mb-6">
                   <div class="program-slider owl-carousel" id="program-slider">
-                    <div class="item"><img src="/slider/slide-1.jpg" alt="" /></div>
-                    <div class="item"><img src="/slider/slide-2.jpg" alt="" /></div>
-                    <div class="item"><img src="/slider/slide-3.jpg" alt="" /></div>
-                    <div class="item"><img src="/slider/slide-4.jpg" alt="" /></div>
-                    <div class="item"><img src="/slider/slide-5.jpg" alt="" /></div>
+                    <div class="item"><img src="/assets/images/slider/slide-1.jpg" alt="" /></div>
+                    <div class="item"><img src="/assets/images/slider/slide-2.jpg" alt="" /></div>
+                    <div class="item"><img src="/assets/images/slider/slide-3.jpg" alt="" /></div>
+                    <div class="item"><img src="/assets/images/slider/slide-4.jpg" alt="" /></div>
+                    <div class="item"><img src="/assets/images/slider/slide-5.jpg" alt="" /></div>
                   </div>
                   <ul class="program-slider-nav pt-6" id="program-slider-nav">
                     <li class="active">
-                      <img src="/slider/thumb-1.jpg" alt="" />
+                      <img src="/assets/images/slider/thumb-1.jpg" alt="" />
                     </li>
                     <li>
-                      <img src="/slider/thumb-2.jpg" alt="" />
+                      <img src="/assets/images/slider/thumb-2.jpg" alt="" />
                     </li>
                     <li>
-                      <img src="/slider/thumb-3.jpg" alt="" />
+                      <img src="/assets/images/slider/thumb-3.jpg" alt="" />
                     </li>
                     <li>
-                      <img src="/slider/thumb-4.jpg" alt="" />
+                      <img src="/assets/images/slider/thumb-4.jpg" alt="" />
                     </li>
                     <li>
-                      <img src="/slider/thumb-5.jpg" alt="" />
+                      <img src="/assets/images/slider/thumb-5.jpg" alt="" />
                     </li>
                   </ul>
                 </div>
@@ -122,29 +124,29 @@
               <h2 class="title-1" id="overview">OT Exam Prep Program</h2>
               <div class="program-rate flex gap-2 items-center mb-10 leading-6">
                 <strong>4.9</strong>
-                <div class="stars w-[98px]"><img src="/stars.png" alt="stars" /></div>
+                <div class="stars w-[98px]"><img src="/assets/images/stars.png" alt="stars" /></div>
                 <span class="">67 Reviews</span>
               </div>
               <div class="package-title mb-[27px] flex items-center gap-4 after:border-[#B4BACE] after:content-[''] after:border-t after:flex-grow">
                 <h5 class="mb-0">Choose your package</h5>
               </div>
-              <div class="packages-group">
+              <div class="packages-group packages-group_top">
                 <h6>Program access only:</h6>
                 <div class="grid grid-cols-3 gap-2">
                   <article class="package-box" data-tab="package-tab-1" data-program="$69 | EXPRESS 14-day Access">
-                    <strong class="package-box__head">EXPRESS | $69</strong>
+                    <strong class="package-box__head"><span>EXPRESS</span><span>$69</span></strong>
                     <div class="package-box__content">
                       <p>Access: 14 days</p>
                     </div>
                   </article>
                   <article class="package-box" data-tab="package-tab-2" data-program="$99 | CRASH COURSE 30-day Access">
-                    <strong class="package-box__head">CRASH COURSE | $99</strong>
+                    <strong class="package-box__head"><span>CRASH COURSE </span><span>$99</span></strong>
                     <div class="package-box__content">
                       <p>Access: 30 days</p>
                     </div>
                   </article>
                   <article class="package-box" data-tab="package-tab-3" data-program="$139 | FIRST TIME 90-day Access">
-                    <strong class="package-box__head">FIRST TIME | $139</strong>
+                    <strong class="package-box__head"><span>FIRST TIME</span><span>$139</span></strong>
                     <div class="package-box__content">
                       <p>Access: 90 days</p>
                     </div>
@@ -154,8 +156,8 @@
               <div class="packages-group">
                 <h6>Program access + Private tutoring package:</h6>
                 <div class="grid grid-cols-3 gap-2">
-                  <article class="package-box bronze" data-tab="package-tab-4"  data-program="$199 | Bronze 60-day Access + Private tutoring">
-                    <strong class="package-box__head !bg-[#BC7A38]">BRONZE | $199</strong>
+                  <article class="package-box bronze" data-tab="package-tab-4" data-program="$199 | Bronze 60-day Access + Private tutoring">
+                    <strong class="package-box__head !bg-[#BC7A38]"><span>BRONZE</span><span>$199</span></strong>
                     <div class="package-box__content">
                       <p>
                         Access: 60 days <br />
@@ -164,7 +166,7 @@
                     </div>
                   </article>
                   <article class="package-box silver" data-tab="package-tab-5" data-program="$565 | GOLD 180-day Access + 7 Private tutoring">
-                    <strong class="package-box__head !bg-[#828282]">SILVER | $375</strong>
+                    <strong class="package-box__head !bg-[#828282]"><span>SILVER</span><span>$375</span></strong>
                     <div class="package-box__content">
                       <p>
                         Access: 120 days <br />
@@ -176,7 +178,7 @@
                     </span>
                   </article>
                   <article class="package-box gold" data-tab="package-tab-6" data-program="$375 | SILVER 120-day Access + 4 Private tutoring">
-                    <strong class="package-box__head !bg-[#D99D03]">GOLD | $565</strong>
+                    <strong class="package-box__head !bg-[#D99D03]"><span>GOLD</span><span>$565</span></strong>
                     <div class="package-box__content">
                       <p>
                         Access: 180 days <br />
@@ -259,30 +261,30 @@
               <div class="slide">
                 <div class="award-block">
                   <div class="award-block__thumb">
-                    <img src="/awards/award-google.svg" alt="google" />
+                    <img src="/assets/images/awards/award-google.svg" alt="google" />
                   </div>
                   <span class="award-block__rate">4.8</span>
-                  <div class="award-block__stars"><img src="/stars.png" alt="stars" /></div>
+                  <div class="award-block__stars"><img src="/assets/images/stars.png" alt="stars" /></div>
                   <span class="award-block__reviews">93 Reviews</span>
                 </div>
               </div>
               <div class="slide">
                 <div class="award-block">
                   <div class="award-block__thumb">
-                    <img src="/awards/award-stamped.svg" alt="google" />
+                    <img src="/assets/images/awards/award-stamped.svg" alt="google" />
                   </div>
                   <span class="award-block__rate">5.0</span>
-                  <div class="award-block__stars"><img src="/stars.png" alt="stars" /></div>
+                  <div class="award-block__stars"><img src="/assets/images/stars.png" alt="stars" /></div>
                   <span class="award-block__reviews">351 Reviews</span>
                 </div>
               </div>
               <div class="slide">
                 <div class="award-block">
                   <div class="award-block__thumb">
-                    <img src="/awards/award-facebook.svg" alt="google" />
+                    <img src="/assets/images/awards/award-facebook.svg" alt="google" />
                   </div>
                   <span class="award-block__rate">4.9</span>
-                  <div class="award-block__stars"><img src="/stars.png" alt="stars" /></div>
+                  <div class="award-block__stars"><img src="/assets/images/stars.png" alt="stars" /></div>
                   <span class="award-block__reviews">67 Reviews</span>
                 </div>
               </div>
@@ -299,7 +301,7 @@
               <div class="owl-carousel" id="tutors-slider">
                 <article class="tutor-box">
                   <figure>
-                    <img src="/tutors/tutor-01.jpg" alt="" />
+                    <img src="/assets/images/tutors/tutor-01.jpg" alt="" />
                   </figure>
                   <h5 class="text-blue">January 19</h5>
                   <div class="tutor-box__details">
@@ -315,7 +317,7 @@
                 </article>
                 <article class="tutor-box">
                   <figure>
-                    <img src="/tutors/tutor-02.jpg" alt="" />
+                    <img src="/assets/images/tutors/tutor-02.jpg" alt="" />
                   </figure>
                   <h5 class="text-blue">January 19</h5>
                   <div class="tutor-box__details">
@@ -331,7 +333,7 @@
                 </article>
                 <article class="tutor-box">
                   <figure>
-                    <img src="/tutors/tutor-03.jpg" alt="" />
+                    <img src="/assets/images/tutors/tutor-03.jpg" alt="" />
                   </figure>
                   <h5 class="text-blue">January 19</h5>
                   <div class="tutor-box__details">
@@ -347,7 +349,7 @@
                 </article>
                 <article class="tutor-box">
                   <figure>
-                    <img src="/tutors/tutor-01.jpg" alt="" />
+                    <img src="/assets/images/tutors/tutor-01.jpg" alt="" />
                   </figure>
                   <h5 class="text-blue">January 19</h5>
                   <div class="tutor-box__details">
@@ -363,7 +365,7 @@
                 </article>
                 <article class="tutor-box">
                   <figure>
-                    <img src="/tutors/tutor-02.jpg" alt="" />
+                    <img src="/assets/images/tutors/tutor-02.jpg" alt="" />
                   </figure>
                   <h5 class="text-blue">January 19</h5>
                   <div class="tutor-box__details">
@@ -379,7 +381,7 @@
                 </article>
                 <article class="tutor-box">
                   <figure>
-                    <img src="/tutors/tutor-03.jpg" alt="" />
+                    <img src="/assets/images/tutors/tutor-03.jpg" alt="" />
                   </figure>
                   <h5 class="text-blue">January 19</h5>
                   <div class="tutor-box__details">
@@ -657,7 +659,7 @@
                 <div class="comparison-table">
                   <div class="comparison__head comparison__row">
                     <span class="cell cell-1">Features Avaliable</span>
-                    <span class="cell cell-2"><img src="/f-logo.png" alt="" /></span>
+                    <span class="cell cell-2"><img src="/assets/images/f-logo.png" alt="" /></span>
                     <span class="cell cell-3">Therapy ED</span>
                     <span class="cell cell-4">AOTA® Online</span>
                     <span class="cell cell-5">True Learn</span>
@@ -840,7 +842,7 @@
             <div class="lg:grid lg:grid-cols-12 xl:flex">
               <div class="lg:col-span-4 xl:w-[480px] xl:flex-shrink-0 xl:flex-grow-0 flex items-center pb-6 lg:pb-0">
                 <strong class="logo"
-                  ><a href="#"><img src="/f-logo.png" alt="path the ot" /></a
+                  ><a href="#"><img src="/assets/images/f-logo.png" alt="path the ot" /></a
                 ></strong>
               </div>
               <div class="lg:col-span-8 xl:flex-grow leading-[18px]">
@@ -858,7 +860,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="main.js"></script>
-    <script src="inner-main.js"></script>
+    <script src="/assets/scripts/main.js"></script>
+    <script src="/assets/scripts/inner-main.js"></script>
   </body>
 </html>

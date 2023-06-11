@@ -55,7 +55,7 @@
   @apply block;
 }
 .exam-container .arrow-down {
-  background: url("/icons/arrow-down.png") no-repeat;
+  background: url("/assets/images/icons/arrow-down.png") no-repeat;
   @apply inline-block w-5 h-[23px];
 }
 .exam-row__cell {

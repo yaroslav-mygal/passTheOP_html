@@ -46,7 +46,7 @@
 }
 .search-form #search {
   @apply pl-6 pr-0;
-  background: url("/icons/icon-search.svg") no-repeat 0 50%;
+  background: url("/assets/images/icons/icon-search.svg") no-repeat 0 50%;
 }
 /* social-menu */
 .social-menu {
@@ -62,31 +62,31 @@
 .social-menu .facebook a:after {
   width: 12px;
   height: 24px;
-  background: url("/social-menu/facebook.png") no-repeat;
+  background: url("/assets/images/social-menu/facebook.png") no-repeat;
   @apply bg-cover;
 }
 .social-menu .twitter a:after {
   width: 24px;
   height: 20px;
-  background: url("/social-menu/twitter.png") no-repeat;
+  background: url("/assets/images/social-menu/twitter.png") no-repeat;
   @apply bg-cover;
 }
 .social-menu .insta a:after {
   width: 24px;
   height: 24px;
-  background: url("/social-menu/insta.png") no-repeat;
+  background: url("/assets/images/social-menu/insta.png") no-repeat;
   @apply bg-cover;
 }
 .social-menu .linkedin a:after {
   width: 22.5px;
   height: 21.54px;
-  background: url("/social-menu/linkedin.png") no-repeat;
+  background: url("/assets/images/social-menu/linkedin.png") no-repeat;
   @apply bg-cover;
 }
 .social-menu .youtude a:after {
   width: 29.33px;
   height: 20.53px;
-  background: url("/social-menu/youtube.png") no-repeat;
+  background: url("/assets/images/social-menu/youtube.png") no-repeat;
   @apply bg-cover;
 }
 /* app-menu */
@@ -97,10 +97,10 @@
   @apply w-[136px] h-[40px] block -indent-[999px] overflow-hidden;
 }
 .app-menu .google-play a {
-  background: url("/app-menu/google-play.png") no-repeat;
+  background: url("/assets/images/app-menu/google-play.png") no-repeat;
   @apply bg-cover;
 }
 .app-menu .app-store a {
-  background: url("/app-menu/app-store.png") no-repeat;
+  background: url("/assets/images/app-menu/app-store.png") no-repeat;
   @apply bg-cover;
 }

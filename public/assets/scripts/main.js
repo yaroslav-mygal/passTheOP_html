@@ -32,7 +32,8 @@ $(document).ready(function () {
     $(".app-head").toggleClass("open");
   });
   $(".panel-group .panel-heading").on("click", function () {
-    $(this).next(".panel-collapse").toggleClass("active");
+    $(this).next(".panel-collapse").toggleClass("open");
+    return false;
   });
   // scroll to
   // $(".scrollTo").click(function (e) {
@@ -47,7 +48,7 @@ $(document).ready(function () {
 });
 
 (function () {
-  $('a[href^="#"]').on("click", function (event) {
+  $("a.scrollTo").on("click", function (event) {
     var target = $(this.getAttribute("href"));
 
     if (target.length) {
