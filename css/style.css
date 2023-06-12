@@ -346,7 +346,7 @@ main {
   @apply !border-[#62697C] !border-2;
 }
 .package-box .package-box__head {
-  @apply bg-blue text-white rounded-t-lg px-1 pt-[2px] pb-[2px] tracking-wider text-[13px] md:text-sm flex justify-center gap-1;
+  @apply bg-blue text-white rounded-t-lg px-[2px] md:px-1 pt-[2px] pb-[2px] md:tracking-wider text-[12px] md:text-sm flex justify-center gap-1;
 }
 .packages-group.packages-group_top .package-box .package-box__head {
   @apply max-md:flex-col max-md:gap-0 max-md:leading-[14px] max-md:py-2;
