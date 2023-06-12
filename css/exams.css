@@ -65,7 +65,7 @@
   @apply px-6 py-4 md:p-8 bg-[#DDE8F7] border-b border-[#B4BACE] relative;
 }
 .exam-row .exam-row__content:after {
-  @apply right-2 top-6 absolute content-[''] w-[17px] h-[10px];
+  @apply right-2 top-6 absolute content-[''] w-[17px] h-[10px] md:hidden;
   background: url("/assets/images/arrow-more.png") no-repeat;
 }
 .exam-row.open .exam-row__content:after {
