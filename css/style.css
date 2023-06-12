@@ -23,7 +23,7 @@ main {
   @apply container mx-auto px-3 xl:px-0;
 }
 #app {
-  @apply text-lg text-current font-articulat overflow-hidden;
+  @apply text-lg text-current font-articulat max-md:overflow-hidden;
 }
 /* guarantee-box */
 .guarantee-box h4,
