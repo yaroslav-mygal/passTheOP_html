@@ -273,6 +273,7 @@ main {
   @apply text-current pb-[1px] px-1 inline-block border-transparent border-b whitespace-nowrap;
 }
 .program-nav li.active a,
+.program-nav li a.active,
 .program-nav a:hover {
   @apply border-current;
 }

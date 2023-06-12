@@ -83,6 +83,7 @@ $(document).ready(function () {
     $("#" + dataTab).addClass("active");
     $("#head-selected-program").text(packageTitle);
   });
+  $(document).on("scroll", onScroll);
 });
 (function () {
   const packagesHead = document.getElementById("additional-head");
@@ -100,4 +101,18 @@ $(document).ready(function () {
     },
     { passive: true }
   );
+  
 })();
+function onScroll(event) {
+  var scrollPos = $(document).scrollTop();
+  $(".program-nav a").each(function () {
+    var currLink = $(this);
+    var refElement = $(currLink.attr("href"));
+    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+      $(".program-nav ul li a").removeClass("active");
+      currLink.addClass("active");
+    } else {
+      currLink.removeClass("active");
+    }
+  });
+}
