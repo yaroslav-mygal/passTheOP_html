@@ -101,12 +101,11 @@ $(document).ready(function () {
     },
     { passive: true }
   );
-  
 })();
 function onScroll(event) {
   var scrollPos = $(document).scrollTop();
-  $(".program-nav a").each(function () {
-    var currLink = $(this);
+  $("#additional-head .program-nav a").each(function () {
+    var currLink = $(this, "#additional-head");
     var refElement = $(currLink.attr("href"));
     if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
       $(".program-nav ul li a").removeClass("active");
