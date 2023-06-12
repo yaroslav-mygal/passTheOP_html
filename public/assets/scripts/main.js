@@ -35,16 +35,6 @@ $(document).ready(function () {
     $(this).next(".panel-collapse").toggleClass("open");
     return false;
   });
-  // scroll to
-  // $(".scrollTo").click(function (e) {
-  //   $("html, body").animate(
-  //     {
-  //       scrollTop: $("#div1").offset().top,
-  //     },
-  //     2000
-  //   );
-  //   return false;
-  // });
 });
 
 (function () {

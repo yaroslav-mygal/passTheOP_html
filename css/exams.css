@@ -62,8 +62,15 @@
   @apply w-[50px] md:w-[64px] flex-grow-0 flex-shrink-0 flex items-center justify-center;
 }
 .exam-row__content {
-  @apply px-6 py-4 md:p-8 bg-[#DDE8F7] border-b border-[#B4BACE];
+  @apply px-6 py-4 md:p-8 bg-[#DDE8F7] border-b border-[#B4BACE] relative;
 }
-.exam-row__content h5 {
+.exam-row .exam-row__content:after {
+  @apply right-2 top-6 absolute content-[''] w-[17px] h-[10px];
+  background: url("/assets/images/arrow-more.png") no-repeat;
+}
+.exam-row.open .exam-row__content:after {
+  @apply rotate-180;
+}
+.exam-row .exam-row__content h5 {
   @apply text-blue mb-0;
 }

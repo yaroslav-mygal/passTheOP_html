@@ -23,7 +23,7 @@ main {
   @apply container mx-auto px-3 xl:px-0;
 }
 #app {
-  @apply text-lg text-current font-articulat;
+  @apply text-lg text-current font-articulat overflow-hidden;
 }
 /* guarantee-box */
 .guarantee-box h4,
@@ -85,6 +85,9 @@ main {
 }
 .courses-section .section-head {
   @apply mb-8;
+}
+.structure-section .section-head {
+  @apply mb-12;
 }
 .section-head.section-head_inner {
   @apply lg:mb-[56px] bg-[#DDE8F6] border border-[#B4BACE] rounded-lg p-6 lg:p-6 lg:pt-8 lg:pb-7 w-full max-w-full;
@@ -188,7 +191,7 @@ main {
 }
 /* comparison-table */
 .comparison-table {
-  @apply pt-4;
+  @apply py-4 text-[15px] md:text-base lg:text-lg;
 }
 .comparison-table .comparison__row .cell.cell-1,
 .comparison-table .comparison__row .cell.cell-2 {
@@ -198,20 +201,20 @@ main {
   @apply px-2;
 }
 .comparison-table .comparison__head {
-  @apply flex bg-[#62697C] text-white font-bold rounded-t-lg;
+  @apply flex bg-[#62697C] text-white font-bold rounded-t-lg leading-normal lg:leading-[28px];
 }
 .comparison-table .comparison__head .cell {
   @apply font-bold flex justify-center items-center relative;
 }
 .comparison-table .comparison__head .cell:nth-child(2) {
-  @apply bg-[#0E3B74] flex items-start;
+  @apply bg-[#0E3B74];
 }
 .comparison-table .comparison__head.comparison__row:first-child .cell:nth-child(2)::before {
   @apply content-[''] absolute left-0 right-0 h-4 bg-inherit -top-4 rounded-t-lg;
 }
 /* comparison-table */
 .comparison-table .comparison__row {
-  @apply grid grid-cols-7 xl:flex font-medium h-[60px];
+  @apply grid grid-cols-7 xl:flex font-medium lg:h-[60px];
 }
 .comparison-table .comparison__row .cell {
   @apply py-1 px-1 flex items-center flex-grow justify-center text-center;
@@ -324,11 +327,14 @@ main {
 .package-tabs .package-tab {
   @apply hidden;
 }
+.package-tabs .package-tab .program-subtitle {
+  @apply mb-10;
+}
 .package-tabs .package-tab.active {
   @apply block;
 }
 .packages-group {
-  @apply mb-9;
+  @apply mb-11;
 }
 .packages-group h6 {
   @apply mb-2 text-base font-normal uppercase tracking-[0.02em];

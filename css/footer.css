@@ -13,6 +13,9 @@
 .app-footer-1 .widget .menu li {
   @apply mb-4;
 }
+.app-footer-1 .widget .menu li a {
+  @apply hover:underline;
+}
 .app-footer-1 .social-menu {
   @apply mb-8;
 }
@@ -20,7 +23,7 @@
   @apply text-white mb-4 text-base flex gap-6;
 }
 .footer-menu a {
-  @apply text-white;
+  @apply text-white hover:underline;
 }
 .footer-widget {
   @apply max-md:first:border-none max-md:border-solid max-md:border-t-2 max-md:border-[#B4BACE];

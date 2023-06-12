@@ -1,13 +1,19 @@
 $(document).ready(function () {
   const owlProgramsSlider = $("#program-slider");
   owlProgramsSlider.owlCarousel({
-    autoPlay: 3000, //Set AutoPlay to 3 seconds
-    autoplay: true,
-    autoplayTimeout: 5000,
     loop: true,
     nav: true,
     dots: false,
     items: 1,
+    responsive: {
+      0: {
+        autoplay: true,
+        autoplayTimeout: 5000,
+      },
+      1024: {
+        autoPlay: false,
+      },
+    },
   });
   owlProgramsSlider.on("changed.owl.carousel", function (event) {
     const slideIndex = event.item.index;

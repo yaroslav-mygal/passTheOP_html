@@ -4,9 +4,8 @@
 .owl-nav {
   position: absolute;
   top: 50%;
-  left: -28px;
-  right: -28px;
   @apply h-[54px] -translate-y-1/2;
+  @apply absolute left-0 right-0 lg:-left-7 lg:-right-7;
 }
 .owl-nav .owl-prev,
 .owl-nav .owl-next {

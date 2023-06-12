@@ -1,6 +1,9 @@
 .main-menu {
   @apply flex gap-6 lg:gap-2 xl:gap-6;
 }
+.main-menu a {
+  @apply hover:underline;
+}
 @media screen and (max-width: 1024px) {
   #app {
     @apply pt-[68px];
