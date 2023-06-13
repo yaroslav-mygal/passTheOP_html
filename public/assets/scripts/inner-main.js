@@ -86,7 +86,7 @@ $(document).ready(function () {
   $(document).on("scroll", onScroll);
 });
 (function () {
-  const packagesHead = document.getElementById("additional-head");
+  const packagesHead = document.getElementById("app");
   const divToWatch = document.querySelector("#packages");
   const offsetDivTop = divToWatch.offsetTop;
   document.addEventListener(
@@ -94,9 +94,9 @@ $(document).ready(function () {
     (event) => {
       const offsetWindowTop = window.scrollY;
       if (offsetWindowTop > offsetDivTop) {
-        packagesHead.classList.add("active");
+        packagesHead.classList.add("active-fixed");
       } else {
-        packagesHead.classList.remove("active");
+        packagesHead.classList.remove("active-fixed");
       }
     },
     { passive: true }

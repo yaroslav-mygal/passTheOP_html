@@ -49,3 +49,15 @@
 .app-footer-2 .footer-menu li {
   @apply max-md:first:w-full;
 }
+#cta-footer {
+  @apply fixed left-0 right-0 bottom-0 z-30 flex justify-center bg-black bg-opacity-70 max-h-0 transition-all;
+}
+#cta-footer .holder {
+  @apply py-1 px-2;
+}
+#cta-footer .btn {
+  @apply max-w-sm;
+}
+.active-fixed #cta-footer {
+  @apply max-h-[100px] md:max-h-0;
+}
