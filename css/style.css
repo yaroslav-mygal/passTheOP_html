@@ -341,7 +341,7 @@ main {
   @apply mb-2 text-base font-normal uppercase tracking-[0.02em];
 }
 .package-box {
-  @apply text-sm border border-[#B4BACE] rounded-lg p-[2px] md:p-[3px] text-center relative;
+  @apply text-sm border border-[#B4BACE] rounded-lg p-[2px] md:p-[3px] text-center relative cursor-pointer;
 }
 .package-box.active {
   @apply !border-[#62697C];

@@ -7,11 +7,11 @@ $(document).ready(function () {
     items: 1,
     responsive: {
       0: {
-        autoplay: true,
-        autoplayTimeout: 5000,
+        autoPlay: false,
       },
       1024: {
-        autoPlay: false,
+        autoplay: true,
+        autoplayTimeout: 5000,
       },
     },
   });
@@ -78,10 +78,12 @@ $(document).ready(function () {
     $(".package-box").removeClass("active");
     const dataTab = $(el).data("tab");
     const packageTitle = $(el).data("program");
+    const packagePrice = $(el).data("price");
     $(el).addClass("active");
     $(".package-tabs .package-tab").removeClass("active");
     $("#" + dataTab).addClass("active");
-    $("#head-selected-program").text(packageTitle);
+    $("#head-selected-program").text(packagePrice + " | " + packageTitle);
+    $("#btn-price").text(packagePrice);
   });
   $(document).on("scroll", onScroll);
 });
