@@ -26,9 +26,7 @@ $(document).ready(function () {
     owlProgramsSlider.trigger("to.owl.carousel", slideIndex);
   });
   $("#tutors-slider").owlCarousel({
-    // autoPlay: 3000, //Set AutoPlay to 3 seconds
-    autoplay: true,
-    autoplayTimeout: 5000,
+    autoplay: false,
     loop: true,
     nav: true,
     dots: false,
@@ -39,6 +37,8 @@ $(document).ready(function () {
       },
       768: {
         items: 2,
+        autoplay: true,
+        autoplayTimeout: 5000,
       },
       1024: {
         items: 3,
