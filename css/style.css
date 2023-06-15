@@ -164,6 +164,9 @@ main {
 .awards-slider {
   @apply flex gap-16 max-w-[320px] md:max-w-full mx-auto lg:max-w-full;
 }
+.award-block .award-block__reviews {
+  @apply text-[15px] hover:underline;
+}
 /* structure-box */
 .structure-box {
   @apply rounded-lg px-6 py-8 lg:p-8 border border-[#B4BACE] relative;
@@ -264,7 +267,7 @@ main {
 }
 /* program-nav */
 .program-nav {
-  @apply pb-5 mb-3 md:mb-9 text-base font-medium max-md:w-full max-md:overflow-auto;
+  @apply pb-5 mb-3 md:mb-9 text-base font-medium;
 }
 .program-nav ul {
   @apply flex justify-between gap-1;
