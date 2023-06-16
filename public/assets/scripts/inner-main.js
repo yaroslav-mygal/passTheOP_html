@@ -47,9 +47,7 @@ $(document).ready(function () {
   });
 
   $("#courses-slider").owlCarousel({
-    // autoPlay: 3000, //Set AutoPlay to 3 seconds
-    autoplay: true,
-    autoplayTimeout: 5000,
+    autoplay: false,
     loop: true,
     nav: true,
     dots: false,
@@ -63,6 +61,8 @@ $(document).ready(function () {
       768: {
         items: 2,
         margin: 24,
+        autoplay: true,
+        autoplayTimeout: 5000,
       },
       1024: {
         margin: 32,
@@ -83,7 +83,7 @@ $(document).ready(function () {
     $(".package-tabs .package-tab").removeClass("active");
     $("#" + dataTab).addClass("active");
     $("#head-selected-program").text(packagePrice + " | " + packageTitle);
-    $("#btn-price").text(packagePrice);
+    $('[data-id="btn-price"]').text(packagePrice);
   });
   $(document).on("scroll", onScroll);
 });

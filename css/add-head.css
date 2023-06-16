@@ -3,7 +3,7 @@
   transition: all ease-in 0.35s;
 }
 .active-fixed #additional-head {
-  @apply max-h-[100px] z-50 py-1 md:pt-2 md:pb-3;
+  @apply max-h-[100px] z-50 py-1 md:pt-2 md:pb-3 shadow-lg;
 }
 #additional-head .ad-program {
   @apply block text-blue text-[20px] md:text-2xl font-bold mb-1;
@@ -22,6 +22,5 @@
   display: none;
 }
 #additional-head .program-nav ul {
-  white-space: nowrap;
   white-space: nowrap;
 }

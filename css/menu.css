@@ -9,7 +9,7 @@
     @apply pt-[68px];
   }
   .app-head.open .nav-wrap {
-    @apply fixed bg-white top-0 bottom-0 left-0 w-4/5 z-10 pt-[88px] px-6 flex flex-col justify-between;
+    @apply fixed bg-white top-0 bottom-0 left-0 w-4/5 z-10 pt-[88px] px-6 flex flex-col justify-between shadow-2xl;
   }
   .app-head.open .main-nav .main-menu li:nth-child(1) a,
   .app-head.open .main-nav .main-menu li:nth-child(2) a {
@@ -20,8 +20,6 @@
   }
   .app-head {
     @apply fixed left-0 right-0 bg-white top-0 z-20;
-  }
-  .app-head.open {
   }
   .app-head.open .logo,
   .app-head.open .head-btn-holder {
@@ -40,6 +38,9 @@
   .additional-nav .main-menu li {
     @apply pt-4;
   }
+}
+.main-menu > li.active a {
+  @apply md:font-bold md:underline;
 }
 .main-menu > li {
   @apply flex items-center;
