@@ -50,10 +50,10 @@
   @apply max-md:first:w-full;
 }
 #cta-footer {
-  @apply fixed left-0 right-0 bottom-0 z-30 flex justify-center max-h-0 transition-all;
+  @apply fixed left-0 right-0 bottom-0 z-30 max-h-0 transition-all;
 }
 #cta-footer .holder {
-  @apply w-full;
+  @apply w-full flex justify-center;
 }
 #cta-footer .btn {
   @apply max-w-md rounded-none;
