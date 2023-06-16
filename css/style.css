@@ -97,7 +97,7 @@ main {
   @apply mb-[4px] max-lg:text-[20px];
 }
 .sessions-section .section-head {
-  @apply max-w-full md:text-2xl;
+  @apply max-w-full;
 }
 .sessions-section .section-head h2,
 .sessions-section .section-head h1 {

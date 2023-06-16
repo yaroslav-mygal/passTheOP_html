@@ -1,9 +1,6 @@
 .main-menu {
   @apply flex gap-6 lg:gap-2 xl:gap-6;
 }
-.main-menu a {
-  @apply hover:underline;
-}
 @media screen and (max-width: 1024px) {
   #app {
     @apply pt-[68px];
@@ -40,10 +37,17 @@
   }
 }
 .main-menu > li.active a {
-  @apply md:font-bold md:underline;
+  /* @apply md:underline; */
 }
 .main-menu > li {
   @apply flex items-center;
+}
+.main-menu > li a {
+  @apply md:inline-block md:border-b md:border-transparent;
+}
+.main-menu > li a:hover,
+.main-menu > li.active a {
+  @apply md:border-current;
 }
 .main-menu > li a > span {
   @apply bg-primary text-white py-1 px-2 uppercase font-normal rounded-[5px] text-[13px] ml-1 md:hidden;

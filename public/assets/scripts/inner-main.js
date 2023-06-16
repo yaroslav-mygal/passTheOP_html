@@ -5,15 +5,7 @@ $(document).ready(function () {
     nav: true,
     dots: false,
     items: 1,
-    responsive: {
-      0: {
-        autoPlay: false,
-      },
-      1024: {
-        autoplay: true,
-        autoplayTimeout: 5000,
-      },
-    },
+    autoPlay: false,
   });
   owlProgramsSlider.on("changed.owl.carousel", function (event) {
     const slideIndex = event.item.index;
