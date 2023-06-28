@@ -82,7 +82,8 @@ $(document).ready(function () {
 (function () {
   const packagesHead = document.getElementById("app");
   const divToWatch = document.querySelector("#packages");
-  const offsetDivTop = divToWatch.offsetTop;
+  const offsetDivTop = divToWatch.offsetTop - 250;
+  console.log(offsetDivTop);
   document.addEventListener(
     "scroll",
     (event) => {
