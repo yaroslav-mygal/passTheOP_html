@@ -1,5 +1,8 @@
 .app-footer {
-  @apply border-t border-gray-500;
+  @apply border-t border-gray-500 text-lg;
+}
+.app-footer li a {
+  @apply font-normal; 
 }
 .app-footer-1 {
   @apply text-lg;

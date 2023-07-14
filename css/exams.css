@@ -66,7 +66,7 @@
 }
 .exam-row .exam-row__content:after {
   @apply right-2 top-6 absolute content-[''] w-[17px] h-[10px] md:hidden;
-  background: url("/assets/images/arrow-more.png") no-repeat;
+  background: url("../assets/images/arrow-more.png") no-repeat;
 }
 .exam-row.open .exam-row__content:after {
   @apply rotate-180;

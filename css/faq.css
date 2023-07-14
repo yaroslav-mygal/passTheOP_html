@@ -67,7 +67,7 @@
   right: 32px;
   top: 50%;
   transform: translateY(-50%);
-  background: #0e3b74 url("/assets/images/icons/arrow-down.svg") no-repeat 50% 50%;
+  background: #0e3b74 url("../assets/images/icons/arrow-down.svg") no-repeat 50% 50%;
   background-size: 13px 12px;
 }
 .panel-collapse {

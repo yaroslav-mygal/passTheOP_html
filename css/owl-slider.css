@@ -37,13 +37,13 @@
   left: 0;
 }
 .owl-nav .owl-prev:before {
-  background: url("/assets/images/icons/arrow-left.svg") no-repeat;
+  background: url("../assets/images/icons/arrow-left.svg") no-repeat;
 }
 .owl-nav .owl-next {
   right: 0;
 }
 .owl-nav .owl-next:before {
-  background: url("/assets/images/icons/arrow-left.svg") no-repeat;
+  background: url("../assets/images/icons/arrow-left.svg") no-repeat;
   transform: rotate(180deg);
 }
 .program-slider-nav {

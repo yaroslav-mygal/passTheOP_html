@@ -10,7 +10,11 @@
 @import url("owl-slider.css");
 @import url("add-head.css");
 
+:root {
+  font-size: 16px;
+}
 html {
+  font-size: 16px;
   /* scroll-behavior: smooth; */
 }
 main {
@@ -21,6 +25,13 @@ main {
 .is-layout-constrained,
 .mx-container {
   @apply container mx-auto px-3 xl:px-0;
+}
+body {
+  @apply font-articulat;
+}
+.app,
+.app-footer {
+  @apply font-articulat;
 }
 #app {
   @apply text-lg text-current font-articulat max-md:overflow-hidden;
@@ -131,18 +142,18 @@ main {
   @apply content-[''] absolute top-0 h-[64px] w-[90px];
 }
 .quote-block:before {
-  background: url("/assets/images/quotes/quote-open.svg");
+  background: url("../assets/images/quotes/quote-open.svg");
   @apply left-0;
 }
 .quote-block.quote-block_white:before {
-  background: url("/assets/images/quotes/quote-open-white.svg");
+  background: url("../assets/images/quotes/quote-open-white.svg");
 }
 .quote-block:after {
-  background: url("/assets/images/quotes/quote-close.svg");
+  background: url("../assets/images/quotes/quote-close.svg");
   @apply right-0 top-[3px] max-md:hidden;
 }
 .quote-block.quote-block_white:after {
-  background: url("/assets/images/quotes/quote-close-white.svg");
+  background: url("../assets/images/quotes/quote-close-white.svg");
 }
 .quote-block q {
   @apply block pt-[6px] font-medium relative z-10;
@@ -245,10 +256,10 @@ main {
   @apply w-7 h-7 overflow-hidden inline-block;
 }
 .comparison-table .included-option {
-  background: url("/assets/images/included-option.svg") no-repeat;
+  background: url("../assets/images/included-option.svg") no-repeat;
 }
 .comparison-table .disabled-option {
-  background: url("/assets/images/disabled-option.svg") no-repeat;
+  background: url("../assets/images/disabled-option.svg") no-repeat;
 }
 /* sessions-section */
 .sessions-section {
@@ -260,7 +271,7 @@ main {
 }
 .program-details-list li:before {
   @apply content-[''] left-0 top-0 absolute w-7 h-7;
-  background: url("/assets/images/icons/marker-list.png") no-repeat;
+  background: url("../assets/images/icons/marker-list.png") no-repeat;
 }
 .program-content h2 {
   @apply text-blue mb-1;
@@ -314,17 +325,17 @@ main {
   @apply flex gap-2;
 }
 .stars-success i {
-  background: url("/assets/images/icons/icon-star.svg") no-repeat;
+  background: url("../assets/images/icons/icon-star.svg") no-repeat;
   @apply inline-block w-[19px] h-[19px] bg-cover;
 }
 .program-details li {
   @apply relative mb-2 pl-6 before:content-[''] before:absolute before:left-0 before:top-[2px] before:w-4 before:h-4;
 }
 .program-details li.recommended-item:before {
-  background: url("/assets/images/icons/icon-up.svg") no-repeat;
+  background: url("../assets/images/icons/icon-up.svg") no-repeat;
 }
 .program-details li.group-item:before {
-  background: url("/assets/images/icons/icon-group.svg") no-repeat;
+  background: url("../assets/images/icons/icon-group.svg") no-repeat;
   top: 4px;
 }
 /* packages-group */
