@@ -39,7 +39,7 @@
     @apply font-bold;
   }
   .main-menu > li.exam-prep a:after {
-    content: 'enrollnow';
+    content: "enrollnow";
     @apply bg-primary text-white py-1 px-2 uppercase font-normal rounded-[5px] text-[13px] ml-1;
   }
 }
@@ -68,58 +68,70 @@
   background: url("../assets/images/icons/icon-search.svg") no-repeat 0 50%;
 }
 /* social-menu */
-.social-menu {
+.social-menu,
+#menu-newsocialmenu {
   @apply flex gap-3;
 }
-.social-menu a {
+.social-menu a,
+#menu-newsocialmenu a {
   @apply w-12 h-12 bg-blue rounded-full -indent-[999px] overflow-hidden flex items-center justify-center;
 }
-.social-menu a::after {
+.social-menu a::after,
+#menu-newsocialmenu a::after {
   content: "";
   display: block;
 }
-.social-menu .facebook a:after {
+.social-menu .facebook a:after,
+#menu-newsocialmenu .facebook a:after {
   width: 12px;
   height: 24px;
   background: url("../assets/images/social-menu/facebook.png") no-repeat;
   @apply bg-cover;
 }
-.social-menu .twitter a:after {
+.social-menu .twitter a:after,
+#menu-newsocialmenu .twitter a:after {
   width: 24px;
   height: 20px;
   background: url("../assets/images/social-menu/twitter.png") no-repeat;
   @apply bg-cover;
 }
-.social-menu .insta a:after {
+.social-menu .insta a:after,
+#menu-newsocialmenu .insta a:after {
   width: 24px;
   height: 24px;
   background: url("../assets/images/social-menu/insta.png") no-repeat;
   @apply bg-cover;
 }
-.social-menu .linkedin a:after {
+.social-menu .linkedin a:after,
+#menu-newsocialmenu .linkedin a:after {
   width: 22.5px;
   height: 21.54px;
   background: url("../assets/images/social-menu/linkedin.png") no-repeat;
   @apply bg-cover;
 }
-.social-menu .youtude a:after {
+.social-menu .youtude a:after,
+#menu-newsocialmenu .youtude a:after {
   width: 29.33px;
   height: 20.53px;
   background: url("../assets/images/social-menu/youtube.png") no-repeat;
   @apply bg-cover;
 }
 /* app-menu */
-.app-menu {
+.app-menu,
+#menu-newmenustoreplay {
   @apply flex gap-4;
 }
-.app-menu a {
+.app-menu a,
+#menu-newmenustoreplay a {
   @apply w-[136px] h-[40px] block -indent-[999px] overflow-hidden;
 }
-.app-menu .google-play a {
+.app-menu .google-play a,
+#menu-newmenustoreplay .google-play a {
   background: url("../assets/images/app-menu/google-play.png") no-repeat;
   @apply bg-cover;
 }
-.app-menu .app-store a {
+.app-menu .app-store a,
+#menu-newmenustoreplay .app-store a {
   background: url("../assets/images/app-menu/app-store.png") no-repeat;
   @apply bg-cover;
 }

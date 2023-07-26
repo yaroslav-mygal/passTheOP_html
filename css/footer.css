@@ -22,10 +22,12 @@
 .app-footer-1 .social-menu {
   @apply mb-8;
 }
-.footer-menu {
+.footer-menu,
+.app-footer-2 .menu {
   @apply text-white mb-4 text-base flex gap-6;
 }
-.footer-menu a {
+.footer-menu a,
+.app-footer-2 .menu a {
   @apply text-white hover:underline;
 }
 .footer-widget {
