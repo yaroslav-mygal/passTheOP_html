@@ -35,6 +35,10 @@ $(document).ready(function () {
     $(this).next(".panel-collapse").toggleClass("open");
     return false;
   });
+  $(".panel-group>.panel > a").on("click", function () {
+    $(this).next(".panel-collapse").toggleClass("open");
+    return false;
+  });
 });
 
 (function () {

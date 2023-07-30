@@ -9,6 +9,7 @@
 @import url("faq.css");
 @import url("owl-slider.css");
 @import url("add-head.css");
+@import url("bs-modal.css");
 
 :root {
   font-size: 16px;
@@ -388,4 +389,7 @@ body {
 }
 .courses-structure-grid .structure-box .structure-box__head h5 {
   @apply mb-0;
+}
+#stamped-reviews-widget[data-widget-type="full-page"] .stamped-ratings-wrapper > div {
+  @apply !ml-0;
 }

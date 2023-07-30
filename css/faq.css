@@ -58,7 +58,8 @@
   border-radius: 8px;
   position: relative;
 }
-.accordion-panel-group-sec .panel-default > .panel-heading > h4.panel-title a:after {
+.accordion-panel-group-sec .panel-default > .panel-heading > h4.panel-title a:after,
+#study_program.panel.panel-default .panel-collapse .panel > a:after {
   content: "";
   width: 28px;
   height: 28px;
@@ -73,7 +74,21 @@
 .panel-collapse {
   display: none;
 }
+.panel-collapse b {
+  @apply bg-primary px-1 text-white mr-1;
+}
 .panel-collapse.open {
   display: block;
   visibility: visible;
+}
+#study_program.panel.panel-default .panel-collapse {
+  @apply border border-solid border-gray-400 p-6;
+}
+#study_program.panel.panel-default .panel-collapse .panel > a {
+  @apply block py-2 px-4 mb-1 font-bold relative border border-solid border-gray-400 rounded-sm;
+  background: #dde8f7;
+  color: #0e3b74;
+}
+#study_program.panel.panel-default .panel-collapse .panel > a:after {
+  @apply w-5 h-5 right-3;
 }

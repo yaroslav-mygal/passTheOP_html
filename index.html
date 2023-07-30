@@ -515,9 +515,12 @@
                   <li class="google-play"><a href="#">google-play</a></li>
                   <li class="app-store"><a href="#">app-store</a></li>
                 </ul>
-                <div class="menu-newmenustoreplay-container"><ul id="menu-newmenustoreplay" class="menu"><li id="menu-item-64250" class="google-play menu-item menu-item-type-custom menu-item-object-custom menu-item-64250"><a href="https://play.google.com/store/apps/details?id=com.passot&amp;pli=1">google-play</a></li>
-<li id="menu-item-64251" class="app-store menu-item menu-item-type-custom menu-item-object-custom menu-item-64251"><a href="https://play.google.com/store/apps/details?id=com.passot&amp;pli=1">App Store</a></li>
-</ul></div>
+                <div class="menu-newmenustoreplay-container">
+                  <ul id="menu-newmenustoreplay" class="menu">
+                    <li id="menu-item-64250" class="google-play menu-item menu-item-type-custom menu-item-object-custom menu-item-64250"><a href="https://play.google.com/store/apps/details?id=com.passot&amp;pli=1">google-play</a></li>
+                    <li id="menu-item-64251" class="app-store menu-item menu-item-type-custom menu-item-object-custom menu-item-64251"><a href="https://play.google.com/store/apps/details?id=com.passot&amp;pli=1">App Store</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -552,8 +555,57 @@
         </div>
       </div>
     </div>
+    <a href="#" data-toggle="modal" data-target="#practice-test-btn-modal">Open modal</a>
+    <!-- modals start -->
+    <div class="modal fade" id="practice-test-btn-modal" tabindex="-1" role="dialog" aria-hidden="true" style="display: none">
+      <form method="POST" action="/are-you-ready-to-take-the-nbcot-exam" id="take_test_now_codeinit_form2">
+        <input type="hidden" name="email" id="email_fieldd1" />
+      </form>
+      <form method="POST" id="take_test_now_codeinit">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <img src="https://my.passtheot.com/wp-content/themes/Smart7/Smart7/assets/images/f-logo.png" alt="Online prep for nbcot exam" />
+              <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label>What is your name? </label>
+                <input type="text" name="name_unic" id="name_unic" required="" />
+              </div>
+              <div class="form-group">
+                <label>Are you an OT/OTA? </label>
+                <select id="ot_or_ota_unic" name="ot_or_ota_unic" required="">
+                  <option value="">Choose</option>
+                  <option value="OT">OT</option>
+                  <option value="OTA">OTA</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>When are you planning to take the NBCOT® exam? </label>
+                <input type="text" name="expected_test_date" id="expected_test_date_unic" required="" class="hasDatepicker" />
+              </div>
+              <div class="form-group">
+                <label
+                  >How many times have you taken the NBCOT® exam?<br />
+                  (Enter 0 if this is your first try)
+                </label>
+                <input type="number" name="times_exam_taken_unic" id="times_exam_taken_unic" required="" />
+              </div>
+              <input type="hidden" name="email" id="email_field_unic" />
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-secondary" id="take_test_now_codeinit_btn">Take Test Now</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- modals end -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="/assets/scripts/main.js"></script>
   </body>
 </html>
