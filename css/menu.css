@@ -39,7 +39,7 @@
     @apply font-bold;
   }
   .main-menu > li.exam-prep a:after {
-    content: "enrollnow";
+    content: "enroll now";
     @apply bg-primary text-white py-1 px-2 uppercase font-normal rounded-[5px] text-[13px] ml-1;
   }
 }
